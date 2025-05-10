@@ -100,8 +100,8 @@
           <div class="row align-items-center">
 
             <div class="col-md-10 mx-auto text-center">
-              <h1 class="heading" data-aos="fade-up">Programmable Water Leak Demonstration Unit</h1>
-              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">Interactive Educational Display Using Java, Python, and Raspberry Pi. Collaborated with a multidisciplinary team of computer and electrical engineers</h2>
+              <h1 class="heading" data-aos="fade-up">3D Scene Reconstruction Using Stereo Images and Motion Capture Data</h1>
+              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">Integrating stereo vision and motion capture to reconstruct precise 3D environments using geometric computer vision techniques in MATLAB.</h2>
             </div>
 
           </div>
@@ -122,17 +122,12 @@
         <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
 
           <div class="portfolio-single-inner">
-            <h2 class="heading-portfolio-single-h2">Programmable Water Leak Demonstration Unit</h2>
+            <h2 class="heading-portfolio-single-h2">3D Scene Reconstruction Using Stereo Images and Motion Capture Data</h2>
 
             <div class="row justify-content-between mb-5">
               <div class="col-12 mb-4">
                 <figure class="mb-4">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EzlO3wsfoF8" 
-                            allowfullscreen 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-                    </iframe>
-                  </div>
+                  <img src="images/work_img_4.png" alt="Image" class="img-fluid">
                 </figure>
               </div>
               <div class="col-12 mb-5">
@@ -140,38 +135,23 @@
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="detail-v1">
                       <span class="detail-label">Project Date</span>
-                      <span class="detail-val">Jan - May, 2024</span>
+                      <span class="detail-val">Oct, 2023</span>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="detail-v1">
                       <span class="detail-label">Role</span>
-                      <span class="detail-val">Data Analysis, Full-stack, Software Engineering</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="detail-v1">
-                      <span class="detail-label">Client</span>
-                      <span class="detail-val">Washington Suburban Sanitary Commission (WSSC)</span>
+                      <span class="detail-val">Computer Vision, Machine Learning</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4 pr-md-5">
-                  <p>As part of a collaborative engineering team, I developed an interactive, real-time water leak demonstration system for the Washington Suburban Sanitary Commission (WSSC), one of the largest water utilities on the East Coast. The goal was to educate customers about the financial and environmental impact of toilet leaks through a hands-on, visual display.</p>
-                </div>
-              
-                <div class="col-md-4 pr-md-5">
-                  <p>I was responsible for building two core software components:</p>
-                  <ul>
-                    <li>A Python-based program that runs on a Raspberry Pi, connected to an adapted water flow sensor. This system accurately detects and processes real-time leak data, including flow rate and leak severity.</li>
-                    <li>A Java-based GUI, developed in NetBeans, that visualizes this data, simulating various types of toilet leaks. The interface displays water waste in real time and projects monthly and quarterly cost impacts. It also includes full support for Spanish-language users and customizable pricing models to align with different billing structures.</li>
-                  </ul>
-                </div>
-              
+                  <p>This project focused on accurately reconstructing a 3D environment by fusing data from stereo image pairs and motion capture (MoCap) systems. The goal was to build a scalable and precise 3D model by combining geometric computer vision techniques with real-world motion tracking data. I began by calibrating the stereo camera setup using known intrinsic and extrinsic parameters, which allowed for accurate projection of MoCap markers onto the stereo image planes. I validated these projections against ground truth to ensure spatial consistency and alignment across frames.</p>
+                </div>           
                 <div class="col-md-4 pl-md-5">
-                  <p>The hardware-integrated demonstration unit includes a functional toilet model that simulates different leak types. The system enables users to see exactly how much water and money is wasted over time — a compelling tool for public awareness and customer engagement. This project exemplified end-to-end system integration, cross-language communication between Python and Java, real-time data processing, and user-centered design. It was successfully deployed as a prototype for future use in WSSC’s customer outreach programs.</p>
+                  <p>To derive depth and reconstruct 3D points, I implemented triangulation algorithms, allowing for spatial measurement of scene elements such as floor and wall planes. I then computed the Fundamental matrix using the 8-point algorithm, and evaluated the geometric integrity of the reconstruction by measuring the Symmetric Epipolar Distance between feature correspondences and epipolar lines. Throughout the project, I developed well-documented MATLAB scripts for each pipeline stage—from calibration and projection to triangulation and validation—ensuring modularity and reproducibility. The result was a robust 3D reconstruction workflow, capable of integrating physical MoCap data with stereo vision to model complex scenes with high spatial accuracy.</p>
                 </div>
               </div>
 
