@@ -6,7 +6,9 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
-  
+}
+
+body {
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
