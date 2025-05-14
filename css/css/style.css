@@ -4,37 +4,60 @@ body {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
-  position: relative; }
-  body:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    z-index: 8; }
-  body.offcanvas {
-    overflow: hidden; }
-    body.offcanvas:before {
-      visibility: visible;
-      opacity: 1; }
+  position: relative;
 
+  /* Add the background image here */
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* optional */
+  
+  /* Fallback background color */
+  background-color: #000;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  /* This creates a semi-transparent black overlay on top of the background image */
+  background: rgba(0, 0, 0, 0.5);
+
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  z-index: 8;
+}
+
+body.offcanvas {
+  overflow: hidden;
+}
+body.offcanvas:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Background color fallback for inner containers */
 body, .unslate_co--site-inner {
-  background: #000; }
+  background: transparent; /* change from #000 so the image shows through */
+}
 
+/* Selection highlight */
 ::-moz-selection {
   background: #000;
-  color: #fff; }
-
+  color: #fff;
+}
 ::selection {
   background: #000;
-  color: #fff; }
+  color: #fff;
+}
 
 a {
   -webkit-transition: .3s all ease;
