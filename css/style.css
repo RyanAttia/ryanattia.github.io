@@ -6,15 +6,15 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
-}
 
-body {
-  background-image: url('../images/background.png');
+  /* Add this for background image */
+  background-image: url('../images/background.png'); /* Adjust path if needed */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Optional: makes background fixed on scroll */
-  min-height: 100vh; /* Ensure body fills viewport height */
+  background-attachment: fixed; /* optional, makes background fixed during scroll */
+  background-color: #000; /* fallback color */
+  min-height: 100vh; /* ensures full viewport height */
 }
 
 body:before {
