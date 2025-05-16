@@ -6,7 +6,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
-}
+} 
 
 body:before {
   content: "";
