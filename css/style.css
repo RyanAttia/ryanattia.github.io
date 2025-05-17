@@ -12,6 +12,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-color: #000;
+  min-height: 100vh;
+  z-index: 0;
 } 
 
 body:before {
@@ -39,8 +42,8 @@ body.offcanvas:before {
   opacity: 1;
 }
 
-body, .unslate_co--site-inner {
-  background: #000;
+.unslate_co--site-inner {
+  background: transparent;
 }
 
 ::-moz-selection {
