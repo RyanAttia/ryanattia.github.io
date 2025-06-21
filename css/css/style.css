@@ -1498,36 +1498,3 @@ span.error {
     height: 100%;
     border: 1px solid red;
     background: #000; }
-
-
-.circle {
-  --size: 100px;
-  --value: 75; /* fallback */
-  --bar-color: #4caf50;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  background: conic-gradient(var(--bar-color) calc(var(--value) * 1%), #eee 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-}
-
-.circle-inner {
-  width: 80%;
-  height: 80%;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.percent {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-
