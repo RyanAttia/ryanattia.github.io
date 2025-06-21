@@ -1498,3 +1498,28 @@ span.error {
     height: 100%;
     border: 1px solid red;
     background: #000; }
+
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80px;
+}
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke: #4CAF50;
+  animation: progress 1s ease-out forwards;
+}
+.percentage {
+  fill: #333;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
