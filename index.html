@@ -456,12 +456,25 @@
 
       <div class="row pt-5">
         <!-- First Row: 4 Skills -->
-        <div class="skill">
-          <h5>Python <span class="float-end">96%</span></h5>
-          <div class="progress">
-            <div class="progress-bar bg-success" style="width: 96%;" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+        <div class="circular-skill">
+          <svg viewBox="0 0 36 36" class="circular-chart green">
+            <path class="circle-bg"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <path class="circle"
+                  stroke-dasharray="96, 100"
+                  d="M18 2.0845
+                     a 15.9155 15.9155 0 0 1 0 31.831
+                     a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <text x="18" y="20.35" class="percentage">96%</text>
+          </svg>
+          <p class="text-center mt-2">Python</p>
         </div>
+
+
+
+        
         <div class="col-6 col-sm-6 mb-5 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
           <div class="counter-v1 text-center">
             <span class="number-wrap">
