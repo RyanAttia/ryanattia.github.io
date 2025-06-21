@@ -10,16 +10,15 @@
   <meta name="keywords" content="html, css, javascript, jquery">
   <meta name="author" content="">
 
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="../css/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="../css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/vendor/aos.css">
+  <link rel="stylesheet" href="../css/vendor/animate.min.css">
+  <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/vendor/jquery.fancybox.min.css">
 
   <!-- Theme Style -->
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
@@ -44,23 +43,44 @@
       <nav class="unslate_co--site-nav site-nav-target">
 
         <div class="container">
-        
+
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li class="has-children">
+                  <a href="index.html#home-section" class="nav-link">Home</a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="index.html">Hero Image BG</a>
+                    </li>
+                    <li>
+                      <a href="index-video.html">Video BG</a>
+                    </li>
+                    <li>
+                      <a href="index-hero-slider.html">Hero Slider</a>
+                    </li>
+                    <li>
+                      <a href="index-sidebar-menu.html">Sidebar Menu</a>
+                    </li>
+                    <li>
+                      <a href="index-right-menu.html">Right Menu</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="index.html#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#about-section" class="nav-link">About</a></li>
+                <li><a href="index.html#services-section" class="nav-link">Services</a></li>
               </ul>
             </div>
             <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">Ryan<span>.</span></a>
+              <a href="index.html" class="unslate_co--site-logo">Unfold<span>.</span></a>
             </div>
             <div class="col-md-5 text-right text-lg-left">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="index.html#skills-section" class="nav-link">Skills</a></li>
+                <li><a href="index.html#testimonial-section" class="nav-link">Testimonial</a></li>
+                <li><a href="index.html#journal-section" class="nav-link">Journal</a></li>
+                <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
               </ul>
 
               <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
@@ -72,7 +92,8 @@
         </div>
 
       </nav>
-
+    </div>
+  </div>
       <!-- END nav -->
 
       <div class="cover-v1 gradient-bottom-black jarallax">
@@ -80,8 +101,8 @@
           <div class="row align-items-center">
 
             <div class="col-md-10 mx-auto text-center">
-              <h1 class="heading" data-aos="fade-up">Low-level Complex Multiplier</h1>
-              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">FPGA-based Complex Multiplier with Zynq SoC Integration</h2>
+              <h1 class="heading" data-aos="fade-up">Course Scheduling App</h1>
+              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">Course Scheduling Application: Streamlined Semester and Enrollment Management.</h2>
             </div>
 
           </div>
@@ -102,12 +123,12 @@
         <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
           <div class="portfolio-single-inner">
 
-            <h2 class="heading-portfolio-single-h2">Low-level Complex Multiplier</h2>
+            <h2 class="heading-portfolio-single-h2">Course Scheduling App</h2>
 
             <div class="row justify-content-between align-items-stretch">
 
               <div class="col-lg-8">
-                <p><a href="images/work_img_11.png" data-fancybox="gal"><img src="images/work_img_11.png" alt="Image" class="img-fluid"></a></p>
+                <p><a href="../images/work_img_13.png" data-fancybox="gal"><img src="../images/work_img_13.png" alt="Image" class="img-fluid"></a></p>
               </div>
               <div class="col-lg-4 pl-lg-5">
                 <div class="unslate_co--sticky">
@@ -115,21 +136,20 @@
                     <div class="col-md-12 mb-4">
                       <div class="detail-v1">
                         <span class="detail-label">Project Description</span>
-                          <p>Designed and implemented a low-level complex multiplier using the Zynq System-on-Chip (SoC) on a Zedboard, which integrates FPGA and ARM cores to provide a hybrid hardware/software solution. The project involved creating a complex multiplier as an AXI peripheral in the FPGA’s Programmable Logic (PL) and interfacing it with C code running on the ARM cores of the Processing System (PS).</p>
-                          <p>The development process was divided into three key stages: creating the complex multiplier as an AXI IP block, integrating it into a Zynq PL design using Vivado, and developing C code on the PS to enable data read/write operations. The project highlighted proficiency in FPGA programming, AXI interface design, and embedded system development, resulting in an efficient system that accelerates complex number multiplication with seamless hardware-software integration.</p>
+                          <p>Developed a Java-based course scheduling application using NetBeans, featuring a GUI interface that allows users to manage semesters, students, courses, and enrollments. The application follows Object-Oriented Design principles and utilizes Java Swing components like checkboxes and combo boxes for intuitive interaction. The backend integrates with a database through “Queries” classes (e.g., CourseQueries, StudentQueries) that manage database operations, including adding/removing students, enrolling them in courses, and managing waitlists. The project emphasizes modularity, database connectivity, and maintainability.</p>
                       </div>
                     </div>
 
                     <div class="col-md-12 mb-4">
                       <div class="detail-v1">
                         <span class="detail-label">Project Date</span>
-                        <span class="detail-val">March, 2024</span>
+                        <span class="detail-val">Nov, 2022</span>
                       </div>
                     </div>
                     <div class="col-md-12 mb-4">
                       <div class="detail-v1">
                         <span class="detail-label">Role</span>
-                        <span class="detail-val">Embedded Systems Design, FPGA Programming, Hardware-Software Co-Design</span>
+                        <span class="detail-val">Full-Stack, Software Engineering</span>
                       </div>
                     </div>
                   </div>
@@ -147,15 +167,18 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
-              
-            <div class="footer-site-logo"><a href="#">Ryan Attia<span>.</span></a></div>
+
+            <div class="footer-site-logo"><a href="#">Unfold<span>.</span></a></div>
 
             <ul class="footer-site-social">
-              <li><a href="https://www.linkedin.com/in/ryan-attia/">Linkedin</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Behance</a></li>
             </ul>
 
             <p class="site-copyright">
-
                 
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
