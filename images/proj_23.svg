@@ -1,42 +1,151 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a1a2e"/></linearGradient></defs>
-  <rect width="800" height="500" fill="url(#bg)"/>
-  <!-- Clock face -->
-  <circle cx="260" cy="270" r="130" fill="#161b22" stroke="#58a6ff" stroke-width="3"/>
-  <circle cx="260" cy="270" r="6" fill="#58a6ff"/>
-  <!-- Clock ticks -->
-  <line x1="260" y1="145" x2="260" y2="158" stroke="#58a6ff" stroke-width="3"/>
-  <line x1="260" y1="382" x2="260" y2="395" stroke="#58a6ff" stroke-width="3"/>
-  <line x1="133" y1="270" x2="146" y2="270" stroke="#58a6ff" stroke-width="3"/>
-  <line x1="374" y1="270" x2="387" y2="270" stroke="#58a6ff" stroke-width="3"/>
-  <!-- Clock hands -->
-  <line x1="260" y1="270" x2="260" y2="175" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
-  <line x1="260" y1="270" x2="330" y2="310" stroke="#58a6ff" stroke-width="4" stroke-linecap="round"/>
-  <!-- Time digits -->
-  <text x="260" y="230" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">12</text>
-  <text x="380" y="275" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">3</text>
-  <text x="260" y="365" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">6</text>
-  <text x="143" y="275" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">9</text>
-  <!-- Calculator panel -->
-  <rect x="460" y="140" width="260" height="300" rx="10" fill="#161b22" stroke="#e3b341" stroke-width="2"/>
-  <rect x="475" y="155" width="230" height="55" rx="4" fill="#001a00" stroke="#3fb950" stroke-width="1.5"/>
-  <text x="695" y="188" text-anchor="end" fill="#3fb950" font-family="monospace" font-size="22">42 + 8 =</text>
-  <!-- Buttons -->
-  <rect x="475" y="222" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="499" y="246" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">7</text>
-  <rect x="531" y="222" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="555" y="246" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">8</text>
-  <rect x="587" y="222" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="611" y="246" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">9</text>
-  <rect x="643" y="222" width="62" height="36" rx="4" fill="#e3b34133" stroke="#e3b341" stroke-width="1"/><text x="674" y="246" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="14">÷</text>
-  <rect x="475" y="266" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="499" y="290" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">4</text>
-  <rect x="531" y="266" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="555" y="290" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">5</text>
-  <rect x="587" y="266" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="611" y="290" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">6</text>
-  <rect x="643" y="266" width="62" height="36" rx="4" fill="#e3b34133" stroke="#e3b341" stroke-width="1"/><text x="674" y="290" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="14">×</text>
-  <rect x="475" y="310" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="499" y="334" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">1</text>
-  <rect x="531" y="310" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="555" y="334" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">2</text>
-  <rect x="587" y="310" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="611" y="334" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">3</text>
-  <rect x="643" y="310" width="62" height="36" rx="4" fill="#e3b34133" stroke="#e3b341" stroke-width="1"/><text x="674" y="334" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="14">−</text>
-  <rect x="475" y="354" width="104" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="527" y="378" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">0</text>
-  <rect x="587" y="354" width="48" height="36" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/><text x="611" y="378" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14">.</text>
-  <rect x="643" y="354" width="62" height="36" rx="4" fill="#3fb95033" stroke="#3fb950" stroke-width="1"/><text x="674" y="378" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="14">=</text>
-  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold">Calculator &amp; Digital Clock — HCS12</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Assembly · HCS12 · Real-Time Systems</text>
+  <defs>
+    <linearGradient id="bg23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0d1f0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg23)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#3fb950">Calculator &amp; Digital Clock</text>
+  <text x="400" y="66" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">HCS12 MCU · Assembly Language</text>
+
+  <!-- ===== LEFT: DIGITAL CLOCK DISPLAY ===== -->
+  <rect x="40" y="90" width="340" height="320" rx="8" fill="#0a0a0a" stroke="#3fb950" stroke-width="2"/>
+  <text x="210" y="118" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb950">DIGITAL CLOCK DISPLAY</text>
+
+  <!-- 7-segment display background panel -->
+  <rect x="55" y="125" width="310" height="140" rx="6" fill="#050f05" stroke="#1a3a1a" stroke-width="1.5"/>
+
+  <!-- Helper macro: each digit built from small rects (7-seg style) -->
+  <!-- Digit "1" at x=70 -->
+  <!-- Segments: top, top-left, top-right, mid, bot-left, bot-right, bottom -->
+  <!-- "1": top-right, bot-right -->
+  <rect x="105" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-right -->
+  <rect x="105" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-right -->
+
+  <!-- "0" at x=120: all except middle -->
+  <rect x="122" y="130" width="28" height="8" rx="2" fill="#3fb950"/><!-- top -->
+  <rect x="118" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-left -->
+  <rect x="146" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-right -->
+  <rect x="118" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-left -->
+  <rect x="146" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-right -->
+  <rect x="122" y="190" width="28" height="8" rx="2" fill="#3fb950"/><!-- bottom -->
+
+  <!-- Colon -->
+  <rect x="162" y="145" width="8" height="8" rx="2" fill="#3fb950"/>
+  <rect x="162" y="170" width="8" height="8" rx="2" fill="#3fb950"/>
+
+  <!-- "4": top-left, top-right, mid, bot-right -->
+  <rect x="178" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-left -->
+  <rect x="204" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-right -->
+  <rect x="180" y="159" width="28" height="8" rx="2" fill="#3fb950"/><!-- mid -->
+  <rect x="204" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-right -->
+
+  <!-- "2": top, top-right, mid, bot-left, bottom -->
+  <rect x="222" y="130" width="28" height="8" rx="2" fill="#3fb950"/><!-- top -->
+  <rect x="246" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-right -->
+  <rect x="222" y="159" width="28" height="8" rx="2" fill="#3fb950"/><!-- mid -->
+  <rect x="218" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-left -->
+  <rect x="222" y="190" width="28" height="8" rx="2" fill="#3fb950"/><!-- bottom -->
+
+  <!-- Colon -->
+  <rect x="262" y="145" width="8" height="8" rx="2" fill="#3fb950"/>
+  <rect x="262" y="170" width="8" height="8" rx="2" fill="#3fb950"/>
+
+  <!-- "3": top, top-right, mid, bot-right, bottom -->
+  <rect x="278" y="130" width="28" height="8" rx="2" fill="#3fb950"/><!-- top -->
+  <rect x="302" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-right -->
+  <rect x="278" y="159" width="28" height="8" rx="2" fill="#3fb950"/><!-- mid -->
+  <rect x="302" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-right -->
+  <rect x="278" y="190" width="28" height="8" rx="2" fill="#3fb950"/><!-- bottom -->
+
+  <!-- "5": top, top-left, mid, bot-right, bottom -->
+  <rect x="322" y="130" width="28" height="8" rx="2" fill="#3fb950"/><!-- top -->
+  <rect x="318" y="133" width="8" height="28" rx="2" fill="#3fb950"/><!-- top-left -->
+  <rect x="320" y="159" width="28" height="8" rx="2" fill="#3fb950"/><!-- mid -->
+  <rect x="344" y="165" width="8" height="28" rx="2" fill="#3fb950"/><!-- bot-right -->
+  <rect x="320" y="190" width="28" height="8" rx="2" fill="#3fb950"/><!-- bottom -->
+
+  <!-- Time label -->
+  <text x="210" y="215" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb95088">HH : MM : SS</text>
+
+  <!-- Date display below -->
+  <rect x="75" y="278" width="270" height="32" rx="4" fill="#050f05" stroke="#1a3a1a" stroke-width="1"/>
+  <text x="210" y="299" text-anchor="middle" font-family="monospace" font-size="14" fill="#3fb950">SUN  17 / 05 / 2026</text>
+
+  <!-- Status indicators -->
+  <circle cx="90" cy="348" r="8" fill="#3fb950"/>
+  <text x="104" y="352" font-family="monospace" font-size="11" fill="#3fb950">AM</text>
+  <rect x="140" y="340" width="60" height="16" rx="3" fill="#0d2a0d"/>
+  <text x="170" y="352" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">ALARM OFF</text>
+  <text x="260" y="352" font-family="monospace" font-size="10" fill="#3fb95066">24H MODE</text>
+
+  <!-- HCS12 label -->
+  <text x="210" y="395" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">HCS12 MCU · 8MHz Crystal</text>
+
+  <!-- ===== RIGHT: CALCULATOR PANEL ===== -->
+  <rect x="400" y="90" width="360" height="320" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="580" y="118" text-anchor="middle" font-family="monospace" font-size="11" fill="#58a6ff">CALCULATOR</text>
+
+  <!-- Calc display -->
+  <rect x="415" y="125" width="330" height="50" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="735" y="148" text-anchor="end" font-family="monospace" font-size="11" fill="#8b949e">10 × 42 =</text>
+  <text x="735" y="167" text-anchor="end" font-family="monospace" font-size="20" font-weight="bold" fill="#58a6ff">420</text>
+
+  <!-- Calculator buttons grid (5 rows x 4 cols) -->
+  <!-- Row 1: C, +/-, %, / -->
+  <rect x="415" y="182" width="72" height="36" rx="4" fill="#2d333b"/>
+  <text x="451" y="204" text-anchor="middle" font-family="monospace" font-size="14" fill="#f85149">C</text>
+  <rect x="495" y="182" width="72" height="36" rx="4" fill="#2d333b"/>
+  <text x="531" y="204" text-anchor="middle" font-family="monospace" font-size="14" fill="#c9d1d9">+/-</text>
+  <rect x="575" y="182" width="72" height="36" rx="4" fill="#2d333b"/>
+  <text x="611" y="204" text-anchor="middle" font-family="monospace" font-size="14" fill="#c9d1d9">%</text>
+  <rect x="655" y="182" width="90" height="36" rx="4" fill="#58a6ff"/>
+  <text x="700" y="204" text-anchor="middle" font-family="monospace" font-size="16" fill="#0d1117">÷</text>
+
+  <!-- Row 2: 7, 8, 9, * -->
+  <rect x="415" y="224" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="451" y="247" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">7</text>
+  <rect x="495" y="224" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="531" y="247" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">8</text>
+  <rect x="575" y="224" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="611" y="247" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">9</text>
+  <rect x="655" y="224" width="90" height="36" rx="4" fill="#58a6ff"/>
+  <text x="700" y="247" text-anchor="middle" font-family="monospace" font-size="16" fill="#0d1117">×</text>
+
+  <!-- Row 3: 4, 5, 6, - -->
+  <rect x="415" y="266" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="451" y="289" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">4</text>
+  <rect x="495" y="266" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="531" y="289" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">5</text>
+  <rect x="575" y="266" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="611" y="289" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">6</text>
+  <rect x="655" y="266" width="90" height="36" rx="4" fill="#58a6ff"/>
+  <text x="700" y="289" text-anchor="middle" font-family="monospace" font-size="16" fill="#0d1117">-</text>
+
+  <!-- Row 4: 1, 2, 3, + -->
+  <rect x="415" y="308" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="451" y="331" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">1</text>
+  <rect x="495" y="308" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="531" y="331" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">2</text>
+  <rect x="575" y="308" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="611" y="331" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">3</text>
+  <rect x="655" y="308" width="90" height="36" rx="4" fill="#58a6ff"/>
+  <text x="700" y="331" text-anchor="middle" font-family="monospace" font-size="16" fill="#0d1117">+</text>
+
+  <!-- Row 5: 0, ., = -->
+  <rect x="415" y="350" width="152" height="36" rx="4" fill="#21262d"/>
+  <text x="491" y="373" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">0</text>
+  <rect x="575" y="350" width="72" height="36" rx="4" fill="#21262d"/>
+  <text x="611" y="373" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9">.</text>
+  <rect x="655" y="350" width="90" height="36" rx="4" fill="#3fb950"/>
+  <text x="700" y="373" text-anchor="middle" font-family="monospace" font-size="16" fill="#0d1117">=</text>
+
+  <!-- Bottom labels -->
+  <text x="580" y="415" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">HCS12 Assembly · Keypad Matrix · LCD Output</text>
+
+  <!-- Footer -->
+  <text x="400" y="465" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Embedded Systems · Assembly Language · HCS12 MCU</text>
 </svg>

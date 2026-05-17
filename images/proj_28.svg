@@ -1,39 +1,132 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a2e1a"/></linearGradient></defs>
-  <rect width="800" height="500" fill="url(#bg)"/>
-  <!-- Bar chart -->
-  <rect x="90" y="350" width="45" height="120" fill="#3fb95066" stroke="#3fb950" stroke-width="1.5" transform="scale(1,-1) translate(0,-470)"/>
-  <rect x="150" y="350" width="45" height="180" fill="#3fb95066" stroke="#3fb950" stroke-width="1.5" transform="scale(1,-1) translate(0,-470)"/>
-  <rect x="210" y="350" width="45" height="90" fill="#3fb95066" stroke="#3fb950" stroke-width="1.5" transform="scale(1,-1) translate(0,-470)"/>
-  <rect x="270" y="350" width="45" height="150" fill="#3fb95066" stroke="#3fb950" stroke-width="1.5" transform="scale(1,-1) translate(0,-470)"/>
-  <rect x="330" y="350" width="45" height="200" fill="#3fb95066" stroke="#3fb950" stroke-width="1.5" transform="scale(1,-1) translate(0,-470)"/>
-  <!-- X axis -->
-  <line x1="80" y1="350" x2="400" y2="350" stroke="#30363d" stroke-width="1.5"/>
-  <line x1="80" y1="150" x2="80" y2="350" stroke="#30363d" stroke-width="1.5"/>
-  <text x="112" y="368" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Mon</text>
-  <text x="172" y="368" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Tue</text>
-  <text x="232" y="368" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Wed</text>
-  <text x="292" y="368" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Thu</text>
-  <text x="352" y="368" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Fri</text>
-  <!-- Line chart (right) -->
-  <polyline points="440,320 490,270 540,290 590,220 640,240 690,180 740,200" fill="none" stroke="#58a6ff" stroke-width="2.5"/>
-  <circle cx="440" cy="320" r="4" fill="#58a6ff"/>
-  <circle cx="490" cy="270" r="4" fill="#58a6ff"/>
-  <circle cx="540" cy="290" r="4" fill="#58a6ff"/>
-  <circle cx="590" cy="220" r="4" fill="#58a6ff"/>
-  <circle cx="640" cy="240" r="4" fill="#58a6ff"/>
-  <circle cx="690" cy="180" r="4" fill="#58a6ff"/>
-  <circle cx="740" cy="200" r="4" fill="#58a6ff"/>
-  <line x1="430" y1="350" x2="750" y2="350" stroke="#30363d" stroke-width="1.5"/>
-  <line x1="430" y1="150" x2="430" y2="350" stroke="#30363d" stroke-width="1.5"/>
-  <!-- Insight box -->
-  <rect x="430" y="375" width="320" height="55" rx="4" fill="#161b22" stroke="#e3b341" stroke-width="1.5"/>
-  <text x="590" y="397" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="11">↑ 23% avg daily steps on weekdays</text>
-  <text x="590" y="416" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Bellabeat · Pandas · Power BI · EDA</text>
-  <!-- Pie chart hint -->
-  <path d="M190 430 A50 50 0 0 1 240 430 L215 410 Z" fill="#3fb950" opacity="0.7"/>
-  <path d="M240 430 A50 50 0 0 1 190 430 L215 410 Z" fill="#58a6ff" opacity="0.7"/>
-  <text x="215" y="475" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Activity Split</text>
-  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold">Bellabeat Case Study</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · Pandas · EDA · Power BI</text>
+  <defs>
+    <linearGradient id="bg28" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a2e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg28)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#3fb950">Bellabeat Case Study</text>
+  <text x="400" y="60" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Python · Pandas · Power BI · Data Analysis</text>
+
+  <!-- ===== LEFT: Bar Chart ===== -->
+  <rect x="60" y="90" width="320" height="290" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="220" y="112" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb950">Avg Daily Steps by Day</text>
+
+  <!-- Y-axis -->
+  <line x1="95" y1="130" x2="95" y2="360" stroke="#30363d" stroke-width="1.5"/>
+  <!-- X-axis -->
+  <line x1="95" y1="360" x2="365" y2="360" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="88" y="364" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">0</text>
+  <text x="88" y="316" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">2k</text>
+  <line x1="92" y1="315" x2="95" y2="315" stroke="#30363d" stroke-width="1"/>
+  <text x="88" y="268" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">4k</text>
+  <line x1="92" y1="267" x2="95" y2="267" stroke="#30363d" stroke-width="1"/>
+  <text x="88" y="220" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">6k</text>
+  <line x1="92" y1="219" x2="95" y2="219" stroke="#30363d" stroke-width="1"/>
+  <text x="88" y="172" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">8k</text>
+  <line x1="92" y1="171" x2="95" y2="171" stroke="#30363d" stroke-width="1"/>
+  <text x="88" y="140" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">10k</text>
+  <line x1="92" y1="139" x2="95" y2="139" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Grid lines -->
+  <line x1="95" y1="315" x2="365" y2="315" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="95" y1="267" x2="365" y2="267" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="95" y1="219" x2="365" y2="219" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="95" y1="171" x2="365" y2="171" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="95" y1="139" x2="365" y2="139" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Bars (upward from y=360, max top at y=140) -->
+  <!-- Mon: 7800 steps → height = 7800/10000 * 220 = 171.6 → top = 360-172=188 -->
+  <rect x="103" y="188" width="30" height="172" fill="#3fb950cc" stroke="#3fb950" stroke-width="1"/>
+  <text x="118" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Mon</text>
+
+  <!-- Tue: 8500 → height=187 → top=173 -->
+  <rect x="141" y="173" width="30" height="187" fill="#3fb950cc" stroke="#3fb950" stroke-width="1"/>
+  <text x="156" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Tue</text>
+
+  <!-- Wed: 9200 → height=202 → top=158 -->
+  <rect x="179" y="158" width="30" height="202" fill="#58a6ffcc" stroke="#58a6ff" stroke-width="1"/>
+  <text x="194" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Wed</text>
+
+  <!-- Thu: 7200 → height=158 → top=202 -->
+  <rect x="217" y="202" width="30" height="158" fill="#3fb950cc" stroke="#3fb950" stroke-width="1"/>
+  <text x="232" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Thu</text>
+
+  <!-- Fri: 8800 → height=194 → top=166 -->
+  <rect x="255" y="166" width="30" height="194" fill="#58a6ffcc" stroke="#58a6ff" stroke-width="1"/>
+  <text x="270" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Fri</text>
+
+  <!-- Sat: 6500 → height=143 → top=217 -->
+  <rect x="293" y="217" width="30" height="143" fill="#e3b341cc" stroke="#e3b341" stroke-width="1"/>
+  <text x="308" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Sat</text>
+
+  <!-- Sun: 5800 → height=128 → top=232 -->
+  <rect x="331" y="232" width="30" height="128" fill="#e3b341cc" stroke="#e3b341" stroke-width="1"/>
+  <text x="346" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Sun</text>
+
+  <!-- ===== RIGHT: Line Chart ===== -->
+  <rect x="400" y="90" width="375" height="290" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="587" y="112" text-anchor="middle" font-family="monospace" font-size="11" fill="#58a6ff">Calories Burned Over 30 Days</text>
+
+  <!-- Axes -->
+  <line x1="435" y1="130" x2="435" y2="360" stroke="#30363d" stroke-width="1.5"/>
+  <line x1="435" y1="360" x2="765" y2="360" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Y labels -->
+  <text x="428" y="364" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">1k</text>
+  <text x="428" y="316" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">2k</text>
+  <line x1="432" y1="315" x2="435" y2="315" stroke="#30363d" stroke-width="1"/>
+  <text x="428" y="267" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">3k</text>
+  <line x1="432" y1="266" x2="435" y2="266" stroke="#30363d" stroke-width="1"/>
+  <text x="428" y="219" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">4k</text>
+  <line x1="432" y1="218" x2="435" y2="218" stroke="#30363d" stroke-width="1"/>
+  <text x="428" y="140" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e">5k</text>
+
+  <!-- Grid -->
+  <line x1="435" y1="315" x2="765" y2="315" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="435" y1="266" x2="765" y2="266" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="435" y1="218" x2="765" y2="218" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- X labels (days 1,10,20,30) -->
+  <text x="435" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">1</text>
+  <text x="545" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">10</text>
+  <text x="655" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">20</text>
+  <text x="765" y="374" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">30</text>
+
+  <!-- Line chart data points (calories trend, oscillating around 2500 with upward trend) -->
+  <polyline points="435,310 446,298 457,285 468,300 479,278 490,265 501,280 512,268 523,255 534,270 545,248 556,260 567,245 578,255 589,238 600,248 611,232 622,245 633,228 644,238 655,220 666,232 677,215 688,228 699,210 710,222 721,205 732,218 743,200 754,212 765,195"
+    fill="none" stroke="#58a6ff" stroke-width="2"/>
+
+  <!-- Area fill under line -->
+  <polygon points="435,310 446,298 457,285 468,300 479,278 490,265 501,280 512,268 523,255 534,270 545,248 556,260 567,245 578,255 589,238 600,248 611,232 622,245 633,228 644,238 655,220 666,232 677,215 688,228 699,210 710,222 721,205 732,218 743,200 754,212 765,195 765,360 435,360"
+    fill="#58a6ff22"/>
+
+  <!-- Trend line -->
+  <line x1="435" y1="308" x2="765" y2="196" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="750" y="190" font-family="monospace" font-size="8" fill="#3fb950">trend</text>
+
+  <!-- ===== Bottom row ===== -->
+  <!-- Pie chart hint (small, bottom-left) -->
+  <rect x="60" y="395" width="130" height="90" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="125" y="413" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">Activity Split</text>
+  <!-- Pie wedges centered at x=110, y=455, r=30 -->
+  <!-- Sedentary 45%: 0 to 162deg -->
+  <path d="M110,452 L140,452 A30,30 0 0,1 107,482 Z" fill="#e3b341" opacity="0.85"/>
+  <!-- Light 30%: 162 to 270deg -->
+  <path d="M110,452 L107,482 A30,30 0 0,1 80,452 Z" fill="#58a6ff" opacity="0.85"/>
+  <!-- Active 25%: 270 to 360deg -->
+  <path d="M110,452 L80,452 A30,30 0 0,1 140,452 Z" fill="#3fb950" opacity="0.85"/>
+
+  <!-- Insight box (right) -->
+  <rect x="210" y="395" width="565" height="90" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="1"/>
+  <text x="492" y="413" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">Key Insights</text>
+  <text x="222" y="430" font-family="monospace" font-size="9" fill="#c9d1d9">• Users most active mid-week (Wed/Fri avg 9k+ steps)</text>
+  <text x="222" y="446" font-family="monospace" font-size="9" fill="#c9d1d9">• Weekend activity drops ~25% vs weekdays</text>
+  <text x="222" y="462" font-family="monospace" font-size="9" fill="#c9d1d9">• Calorie burn shows positive 30-day trend (+8.2%)</text>
+  <text x="222" y="478" font-family="monospace" font-size="9" fill="#e3b341">• Recommendation: push weekend engagement campaigns</text>
 </svg>

@@ -1,36 +1,136 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs>
-    <linearGradient id="bg19" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#1a1a2e"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="500" fill="url(#bg19)"/>
-  <!-- Canvas area -->
-  <rect x="200" y="120" width="420" height="280" rx="4" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-  <!-- Brush strokes on canvas -->
-  <path d="M230 200 Q310 160 390 200 Q470 240 550 190" fill="none" stroke="#f78166" stroke-width="8" stroke-linecap="round"/>
-  <path d="M230 260 Q320 300 420 250 Q500 210 580 270" fill="none" stroke="#79c0ff" stroke-width="6" stroke-linecap="round"/>
-  <ellipse cx="340" cy="340" rx="60" ry="40" fill="#3fb95066"/>
-  <ellipse cx="460" cy="320" rx="50" ry="35" fill="#e3b34166"/>
-  <circle cx="500" cy="180" r="25" fill="#f7816644"/>
-  <!-- Toolbar -->
-  <rect x="80" y="120" width="100" height="280" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-  <circle cx="130" cy="160" r="12" fill="#f85149"/>
-  <circle cx="130" cy="200" r="12" fill="#3fb950"/>
-  <circle cx="130" cy="240" r="12" fill="#79c0ff"/>
-  <circle cx="130" cy="280" r="12" fill="#e3b341"/>
-  <circle cx="130" cy="320" r="12" fill="#bc8cff"/>
-  <rect x="110" y="355" width="40" height="8" rx="2" fill="#58a6ff"/>
-  <rect x="115" y="370" width="30" height="8" rx="2" fill="#30363d"/>
-  <!-- Title -->
-  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold">2D Digital Art Pad</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Java · GUI · Object-Oriented Design</text>
-  <!-- Colour palette bottom -->
-  <rect x="640" y="120" width="80" height="280" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-  <text x="680" y="150" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Brush</text>
-  <rect x="655" y="160" width="50" height="6" rx="3" fill="#f85149"/>
-  <rect x="655" y="175" width="50" height="6" rx="3" fill="#3fb950"/>
-  <rect x="655" y="190" width="50" height="6" rx="3" fill="#79c0ff"/>
-  <rect x="655" y="205" width="50" height="6" rx="3" fill="#e3b341"/>
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+
+  <!-- Window frame -->
+  <rect x="25" y="18" width="750" height="462" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect x="25" y="18" width="750" height="30" rx="8" fill="#2d333b"/>
+  <rect x="25" y="36" width="750" height="12" fill="#2d333b"/>
+
+  <!-- Window buttons -->
+  <circle cx="48" cy="33" r="7" fill="#f85149"/>
+  <circle cx="68" cy="33" r="7" fill="#e3b341"/>
+  <circle cx="88" cy="33" r="7" fill="#3fb950"/>
+
+  <!-- Title text -->
+  <text x="400" y="37" text-anchor="middle" font-family="monospace" font-size="12" fill="#c9d1d9">ArtPad v1.0 - Java Swing</text>
+
+  <!-- Menu bar -->
+  <rect x="25" y="48" width="750" height="20" fill="#21262d"/>
+  <text x="50" y="62" font-family="sans-serif" font-size="11" fill="#c9d1d9">File</text>
+  <text x="82" y="62" font-family="sans-serif" font-size="11" fill="#c9d1d9">Edit</text>
+  <text x="114" y="62" font-family="sans-serif" font-size="11" fill="#c9d1d9">View</text>
+  <text x="148" y="62" font-family="sans-serif" font-size="11" fill="#c9d1d9">Help</text>
+
+  <!-- Left toolbar background -->
+  <rect x="25" y="68" width="80" height="412" fill="#1c2128"/>
+  <line x1="105" y1="68" x2="105" y2="480" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Pencil tool (selected) -->
+  <rect x="33" y="76" width="64" height="46" rx="4" fill="#2d333b" stroke="#58a6ff" stroke-width="1.5"/>
+  <line x1="51" y1="107" x2="64" y2="92" stroke="#c9d1d9" stroke-width="2"/>
+  <polygon points="64,92 70,88 68,95" fill="#c9d1d9"/>
+  <text x="65" y="116" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#58a6ff">Pencil</text>
+
+  <!-- Eraser tool -->
+  <rect x="33" y="126" width="64" height="46" rx="4" fill="#21262d"/>
+  <rect x="49" y="138" width="24" height="14" rx="2" fill="#e3b341" opacity="0.8"/>
+  <text x="65" y="166" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c9d1d9">Eraser</text>
+
+  <!-- Line tool -->
+  <rect x="33" y="176" width="64" height="46" rx="4" fill="#21262d"/>
+  <line x1="44" y1="208" x2="84" y2="188" stroke="#3fb950" stroke-width="2"/>
+  <text x="65" y="216" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c9d1d9">Line</text>
+
+  <!-- Fill tool -->
+  <rect x="33" y="226" width="64" height="46" rx="4" fill="#21262d"/>
+  <polygon points="53,253 58,243 63,253 60,253 60,258 56,258 56,253" fill="#bc8cff"/>
+  <text x="65" y="266" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c9d1d9">Fill</text>
+
+  <!-- Shape tool -->
+  <rect x="33" y="276" width="64" height="46" rx="4" fill="#21262d"/>
+  <rect x="47" y="288" width="20" height="16" fill="none" stroke="#f85149" stroke-width="1.5"/>
+  <ellipse cx="69" cy="298" rx="8" ry="6" fill="none" stroke="#f85149" stroke-width="1.5"/>
+  <text x="65" y="316" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c9d1d9">Shape</text>
+
+  <!-- Brush Size label -->
+  <text x="65" y="344" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Brush</text>
+  <text x="65" y="356" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Size</text>
+  <!-- Slider track -->
+  <rect x="40" y="364" width="50" height="4" rx="2" fill="#2d333b"/>
+  <rect x="40" y="364" width="28" height="4" rx="2" fill="#58a6ff"/>
+  <circle cx="68" cy="366" r="6" fill="#58a6ff"/>
+  <text x="65" y="382" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">5px</text>
+
+  <!-- Opacity label -->
+  <text x="65" y="404" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Opacity</text>
+  <rect x="40" y="410" width="50" height="4" rx="2" fill="#2d333b"/>
+  <rect x="40" y="410" width="42" height="4" rx="2" fill="#3fb950"/>
+  <circle cx="82" cy="412" r="6" fill="#3fb950"/>
+  <text x="65" y="428" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">85%</text>
+
+  <!-- Canvas area (white drawing surface) -->
+  <rect x="105" y="68" width="595" height="362" fill="#ffffff"/>
+
+  <!-- Drawn artwork on canvas -->
+  <!-- Blue circle outline -->
+  <circle cx="310" cy="230" r="90" fill="none" stroke="#1565c0" stroke-width="3"/>
+  <!-- Red filled triangle -->
+  <polygon points="470,115 545,250 395,250" fill="#c62828" opacity="0.85"/>
+  <!-- Green rectangle -->
+  <rect x="530" y="155" width="130" height="85" fill="#2e7d32" opacity="0.75"/>
+  <!-- Yellow arc / partial circle -->
+  <path d="M 200 350 Q 240 290 280 350" fill="none" stroke="#f9a825" stroke-width="3"/>
+  <!-- Purple ellipse -->
+  <ellipse cx="450" cy="340" rx="80" ry="45" fill="#6a1b9a" opacity="0.7"/>
+  <!-- Orange diagonal line -->
+  <line x1="115" y1="380" x2="520" y2="115" stroke="#e64a19" stroke-width="2.5"/>
+  <!-- Cyan curve -->
+  <polyline points="120,200 180,160 240,210 300,170 360,220 420,175 480,220" fill="none" stroke="#00838f" stroke-width="2.5"/>
+  <!-- Small color squares -->
+  <rect x="160" y="300" width="28" height="28" fill="#ad1457"/>
+  <rect x="198" y="305" width="22" height="22" fill="#00695c"/>
+  <!-- In-progress pencil stroke (dashed) -->
+  <polyline points="560,180 585,210 610,188 635,215 660,195 685,218" fill="none" stroke="#1a237e" stroke-width="2" stroke-dasharray="5,2"/>
+
+  <!-- Color palette at bottom -->
+  <rect x="105" y="430" width="595" height="50" fill="#21262d"/>
+  <line x1="105" y1="430" x2="700" y2="430" stroke="#30363d" stroke-width="1"/>
+  <text x="120" y="449" font-family="sans-serif" font-size="10" fill="#8b949e">Color Palette:</text>
+
+  <!-- Swatches -->
+  <rect x="210" y="437" width="24" height="24" rx="3" fill="#f44336"/>
+  <rect x="238" y="437" width="24" height="24" rx="3" fill="#e91e63"/>
+  <rect x="266" y="437" width="24" height="24" rx="3" fill="#9c27b0"/>
+  <rect x="294" y="437" width="24" height="24" rx="3" fill="#3f51b5"/>
+  <rect x="322" y="437" width="24" height="24" rx="3" fill="#2196f3"/>
+  <rect x="350" y="437" width="24" height="24" rx="3" fill="#00bcd4"/>
+  <rect x="378" y="437" width="24" height="24" rx="3" fill="#4caf50"/>
+  <rect x="406" y="437" width="24" height="24" rx="3" fill="#8bc34a"/>
+  <rect x="434" y="437" width="24" height="24" rx="3" fill="#ffeb3b"/>
+  <rect x="462" y="437" width="24" height="24" rx="3" fill="#ff9800"/>
+  <rect x="490" y="437" width="24" height="24" rx="3" fill="#ff5722"/>
+  <rect x="518" y="437" width="24" height="24" rx="3" fill="#795548"/>
+  <rect x="546" y="437" width="24" height="24" rx="3" fill="#607d8b"/>
+  <rect x="574" y="437" width="24" height="24" rx="3" fill="#ffffff" stroke="#555" stroke-width="1"/>
+  <rect x="602" y="437" width="24" height="24" rx="3" fill="#000000"/>
+
+  <!-- Active color box -->
+  <rect x="638" y="433" width="32" height="32" rx="4" fill="#1565c0" stroke="#58a6ff" stroke-width="2"/>
+  <text x="654" y="476" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Active</text>
+
+  <!-- Right-side info panel -->
+  <rect x="700" y="68" width="75" height="412" fill="#1c2128"/>
+  <line x1="700" y1="68" x2="700" y2="480" stroke="#30363d" stroke-width="1"/>
+  <text x="737" y="90" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Layers</text>
+  <rect x="708" y="96" width="59" height="22" rx="3" fill="#2d333b" stroke="#58a6ff" stroke-width="1"/>
+  <text x="737" y="111" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c9d1d9">Layer 1</text>
+  <rect x="708" y="122" width="59" height="22" rx="3" fill="#21262d"/>
+  <text x="737" y="137" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Layer 2</text>
+  <rect x="708" y="148" width="59" height="22" rx="3" fill="#21262d"/>
+  <text x="737" y="163" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">BG</text>
+  <text x="737" y="195" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b949e">Zoom</text>
+  <text x="737" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#c9d1d9">100%</text>
 </svg>

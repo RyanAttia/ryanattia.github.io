@@ -1,55 +1,263 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#000000"/><stop offset="100%" style="stop-color:#00001a"/></linearGradient></defs>
-  <rect width="800" height="500" fill="url(#bg)"/>
-  <!-- Pac-Man maze walls -->
-  <rect x="80" y="120" width="460" height="320" rx="4" fill="none" stroke="#2121de" stroke-width="3"/>
-  <!-- Inner walls -->
-  <rect x="120" y="160" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="240" y="160" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="360" y="160" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="120" y="240" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="360" y="240" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="120" y="320" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="240" y="320" width="80" height="40" rx="2" fill="#2121de"/>
-  <rect x="360" y="320" width="80" height="40" rx="2" fill="#2121de"/>
-  <!-- Ghost house -->
-  <rect x="230" y="238" width="100" height="44" rx="4" fill="#21262d" stroke="#ff7b72" stroke-width="1.5"/>
-  <text x="280" y="265" text-anchor="middle" fill="#ff7b72" font-family="monospace" font-size="10">GHOST</text>
-  <!-- Dots -->
-  <circle cx="105" cy="180" r="3" fill="#ffb8ae"/><circle cx="145" cy="145" r="3" fill="#ffb8ae"/><circle cx="225" cy="145" r="3" fill="#ffb8ae"/>
-  <circle cx="310" cy="145" r="3" fill="#ffb8ae"/><circle cx="395" cy="145" r="3" fill="#ffb8ae"/><circle cx="465" cy="180" r="3" fill="#ffb8ae"/>
-  <circle cx="105" cy="280" r="3" fill="#ffb8ae"/><circle cx="465" cy="280" r="3" fill="#ffb8ae"/>
-  <circle cx="105" cy="390" r="3" fill="#ffb8ae"/><circle cx="200" cy="410" r="3" fill="#ffb8ae"/><circle cx="310" cy="410" r="3" fill="#ffb8ae"/><circle cx="420" cy="410" r="3" fill="#ffb8ae"/>
-  <!-- Power pellets -->
-  <circle cx="105" cy="145" r="7" fill="#ffb8ae"/>
-  <circle cx="465" cy="145" r="7" fill="#ffb8ae"/>
-  <circle cx="105" cy="410" r="7" fill="#ffb8ae"/>
-  <circle cx="465" cy="410" r="7" fill="#ffb8ae"/>
-  <!-- Pac-Man -->
-  <path d="M310 290 L350 275 A40 40 0 1 1 350 305 Z" fill="#ffff00"/>
-  <!-- Ghosts -->
-  <ellipse cx="195" cy="290" rx="16" ry="18" fill="#ff7b72"/>
-  <rect x="179" y="290" width="32" height="10" fill="#ff7b72"/>
-  <circle cx="189" cy="284" r="5" fill="white"/><circle cx="201" cy="284" r="5" fill="white"/>
-  <circle cx="190" cy="285" r="2" fill="#2121de"/><circle cx="202" cy="285" r="2" fill="#2121de"/>
-  <ellipse cx="395" cy="200" rx="16" ry="18" fill="#ffb8ff"/>
-  <rect x="379" y="200" width="32" height="10" fill="#ffb8ff"/>
-  <circle cx="389" cy="194" r="5" fill="white"/><circle cx="401" cy="194" r="5" fill="white"/>
-  <circle cx="390" cy="195" r="2" fill="#2121de"/><circle cx="402" cy="195" r="2" fill="#2121de"/>
-  <!-- Q-learning info -->
-  <rect x="570" y="130" width="190" height="200" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
-  <text x="665" y="155" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="11">Q-Learning</text>
-  <text x="665" y="175" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Q(s,a) ← Q(s,a) +</text>
-  <text x="665" y="190" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">α[r + γ·max Q(s')]</text>
-  <line x1="580" y1="205" x2="750" y2="205" stroke="#30363d" stroke-width="1"/>
-  <text x="665" y="222" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">State: grid position</text>
-  <text x="665" y="238" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Actions: U D L R</text>
-  <text x="665" y="254" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="9">+10 dot  +50 pellet</text>
-  <text x="665" y="270" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="9">−500 ghost collision</text>
-  <text x="665" y="290" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="9">BFS ghost pathing</text>
-  <rect x="570" y="350" width="190" height="60" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="665" y="373" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Episode 1:  score  120</text>
-  <text x="665" y="390" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Episode 500: score 4820</text>
-  <text x="400" y="65" text-anchor="middle" fill="#ffff00" font-family="monospace" font-size="20" font-weight="bold">Autonomous Pac-Man</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · Q-Learning · BFS · Pygame</text>
+  <rect width="800" height="500" fill="#000000"/>
+
+  <!-- Title bar area -->
+  <text x="270" y="30" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#ffff00">Autonomous Pac-Man</text>
+  <text x="270" y="50" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Python · Q-Learning · BFS · Pygame</text>
+
+  <!-- Score and lives -->
+  <text x="80" y="72" font-family="monospace" font-size="13" font-weight="bold" fill="#ffffff">SCORE: 4820</text>
+  <text x="340" y="72" font-family="monospace" font-size="13" font-weight="bold" fill="#ffffff">LIVES:</text>
+  <!-- 3 pac-man life icons -->
+  <path d="M410,60 L430,50 A12,12 0 1,1 430,70 Z" fill="#ffff00"/>
+  <path d="M430,60 L450,50 A12,12 0 1,1 450,70 Z" fill="#ffff00"/>
+  <path d="M450,60 L470,50 A12,12 0 1,1 470,70 Z" fill="#ffff00"/>
+
+  <!-- ===== MAZE AREA (left 540px) ===== -->
+  <rect x="20" y="80" width="520" height="400" fill="#000000" stroke="#2121de" stroke-width="2"/>
+
+  <!-- Maze walls - outer border -->
+  <rect x="20" y="80" width="520" height="14" fill="#2121de"/>
+  <rect x="20" y="466" width="520" height="14" fill="#2121de"/>
+  <rect x="20" y="80" width="14" height="400" fill="#2121de"/>
+  <rect x="526" y="80" width="14" height="400" fill="#2121de"/>
+
+  <!-- Horizontal wall segments -->
+  <rect x="55" y="112" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="175" y="112" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="295" y="112" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="415" y="112" width="80" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="55" y="155" width="50" height="12" rx="2" fill="#2121de"/>
+  <rect x="155" y="155" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="335" y="155" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="445" y="155" width="60" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="55" y="210" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="215" y="210" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="415" y="210" width="80" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="115" y="255" width="60" height="12" rx="2" fill="#2121de"/>
+  <rect x="265" y="255" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="375" y="255" width="0" height="0"/><!-- none -->
+  <rect x="365" y="255" width="60" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="55" y="300" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="195" y="300" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="335" y="300" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="445" y="300" width="60" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="55" y="350" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="255" y="350" width="40" height="12" rx="2" fill="#2121de"/>
+  <rect x="365" y="350" width="120" height="12" rx="2" fill="#2121de"/>
+
+  <rect x="115" y="400" width="80" height="12" rx="2" fill="#2121de"/>
+  <rect x="275" y="400" width="120" height="12" rx="2" fill="#2121de"/>
+  <rect x="345" y="400" width="0" height="0"/>
+  <rect x="415" y="400" width="80" height="12" rx="2" fill="#2121de"/>
+
+  <!-- Vertical wall segments -->
+  <rect x="115" y="112" width="12" height="55" rx="2" fill="#2121de"/>
+  <rect x="415" y="112" width="12" height="55" rx="2" fill="#2121de"/>
+  <rect x="265" y="112" width="12" height="55" rx="2" fill="#2121de"/>
+
+  <rect x="175" y="167" width="12" height="55" rx="2" fill="#2121de"/>
+  <rect x="355" y="167" width="12" height="55" rx="2" fill="#2121de"/>
+
+  <rect x="115" y="222" width="12" height="45" rx="2" fill="#2121de"/>
+  <rect x="415" y="222" width="12" height="45" rx="2" fill="#2121de"/>
+  <rect x="265" y="222" width="12" height="45" rx="2" fill="#2121de"/>
+
+  <rect x="55" y="267" width="12" height="45" rx="2" fill="#2121de"/>
+  <rect x="475" y="267" width="12" height="45" rx="2" fill="#2121de"/>
+  <rect x="175" y="267" width="12" height="45" rx="2" fill="#2121de"/>
+  <rect x="355" y="267" width="12" height="45" rx="2" fill="#2121de"/>
+
+  <rect x="115" y="312" width="12" height="50" rx="2" fill="#2121de"/>
+  <rect x="415" y="312" width="12" height="50" rx="2" fill="#2121de"/>
+
+  <rect x="225" y="362" width="12" height="50" rx="2" fill="#2121de"/>
+  <rect x="305" y="362" width="12" height="50" rx="2" fill="#2121de"/>
+
+  <!-- Ghost house (center box) -->
+  <rect x="210" y="196" width="130" height="76" rx="3" fill="#000033" stroke="#ff69b4" stroke-width="2"/>
+  <text x="275" y="241" text-anchor="middle" font-family="monospace" font-size="9" fill="#ff69b4">GHOST HOUSE</text>
+
+  <!-- Dots in corridors -->
+  <!-- Row 1 dots -->
+  <circle cx="75" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="95" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="155" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="175" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="195" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="315" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="335" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="355" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="435" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="100" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="100" r="3" fill="#ffff99"/>
+  <!-- Power pellets (larger) -->
+  <circle cx="43" cy="100" r="6" fill="#ffff99"/>
+  <circle cx="500" cy="100" r="6" fill="#ffff99"/>
+  <circle cx="43" cy="448" r="6" fill="#ffff99"/>
+  <circle cx="500" cy="448" r="6" fill="#ffff99"/>
+
+  <!-- Row 2 dots -->
+  <circle cx="75" cy="135" r="3" fill="#ffff99"/>
+  <circle cx="135" cy="135" r="3" fill="#ffff99"/>
+  <circle cx="235" cy="135" r="3" fill="#ffff99"/>
+  <circle cx="395" cy="135" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="135" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="135" r="3" fill="#ffff99"/>
+
+  <!-- Row 3 dots -->
+  <circle cx="75" cy="180" r="3" fill="#ffff99"/>
+  <circle cx="95" cy="180" r="3" fill="#ffff99"/>
+  <circle cx="135" cy="180" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="180" r="3" fill="#ffff99"/>
+  <circle cx="475" cy="180" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="180" r="3" fill="#ffff99"/>
+
+  <!-- Row 4 dots -->
+  <circle cx="75" cy="235" r="3" fill="#ffff99"/>
+  <circle cx="155" cy="235" r="3" fill="#ffff99"/>
+  <circle cx="315" cy="235" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="235" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="235" r="3" fill="#ffff99"/>
+
+  <!-- Row 5 dots -->
+  <circle cx="75" cy="280" r="3" fill="#ffff99"/>
+  <circle cx="95" cy="280" r="3" fill="#ffff99"/>
+  <circle cx="155" cy="280" r="3" fill="#ffff99"/>
+  <circle cx="355" cy="280" r="3" fill="#ffff99"/><!-- eaten by pacman path -->
+  <circle cx="415" cy="280" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="280" r="3" fill="#ffff99"/>
+
+  <!-- Row 6 dots -->
+  <circle cx="75" cy="325" r="3" fill="#ffff99"/>
+  <circle cx="155" cy="325" r="3" fill="#ffff99"/>
+  <circle cx="315" cy="325" r="3" fill="#ffff99"/>
+  <circle cx="435" cy="325" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="325" r="3" fill="#ffff99"/>
+
+  <!-- Row 7 dots -->
+  <circle cx="75" cy="375" r="3" fill="#ffff99"/>
+  <circle cx="135" cy="375" r="3" fill="#ffff99"/>
+  <circle cx="215" cy="375" r="3" fill="#ffff99"/>
+  <circle cx="315" cy="375" r="3" fill="#ffff99"/>
+  <circle cx="415" cy="375" r="3" fill="#ffff99"/>
+  <circle cx="500" cy="375" r="3" fill="#ffff99"/>
+
+  <!-- Row 8 dots -->
+  <circle cx="75" cy="425" r="3" fill="#ffff99"/>
+  <circle cx="195" cy="425" r="3" fill="#ffff99"/>
+  <circle cx="355" cy="425" r="3" fill="#ffff99"/>
+  <circle cx="455" cy="425" r="3" fill="#ffff99"/>
+
+  <!-- ===== PAC-MAN (yellow wedge) ===== -->
+  <!-- Facing right, mouth open ~45deg, centered at 290,280 -->
+  <path d="M290,280 L315,265 A28,28 0 1,0 315,295 Z" fill="#ffff00"/>
+
+  <!-- ===== GHOSTS ===== -->
+  <!-- Blinky (Red) at 160,170 -->
+  <path d="M145,185 Q145,160 160,158 Q175,160 175,185 Q170,180 165,185 Q160,180 155,185 Q150,182 145,185 Z" fill="#ff0000"/>
+  <ellipse cx="154" cy="170" rx="5" ry="5" fill="white"/>
+  <circle cx="154" cy="171" r="2.5" fill="#2121de"/>
+  <ellipse cx="166" cy="170" rx="5" ry="5" fill="white"/>
+  <circle cx="166" cy="171" r="2.5" fill="#2121de"/>
+
+  <!-- Pinky (Pink) at 330,170 -->
+  <path d="M315,185 Q315,160 330,158 Q345,160 345,185 Q340,180 335,185 Q330,180 325,185 Q320,182 315,185 Z" fill="#ffb8ff"/>
+  <ellipse cx="324" cy="170" rx="5" ry="5" fill="white"/>
+  <circle cx="324" cy="171" r="2.5" fill="#2121de"/>
+  <ellipse cx="336" cy="170" rx="5" ry="5" fill="white"/>
+  <circle cx="336" cy="171" r="2.5" fill="#2121de"/>
+
+  <!-- Clyde (Blue/scared) at 460,325 -->
+  <path d="M445,340 Q445,315 460,313 Q475,315 475,340 Q470,335 465,340 Q460,335 455,340 Q450,337 445,340 Z" fill="#2121ff"/>
+  <ellipse cx="454" cy="325" rx="5" ry="5" fill="white"/>
+  <circle cx="454" cy="326" r="2.5" fill="#2121de"/>
+  <ellipse cx="466" cy="325" rx="5" ry="5" fill="white"/>
+  <circle cx="466" cy="326" r="2.5" fill="#2121de"/>
+
+  <!-- BFS path indicator (dotted trail showing Pac-Man's planned path) -->
+  <polyline points="290,280 265,280 245,280 225,280 205,280 185,280" fill="none" stroke="#ffff0066" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- ===== RIGHT PANEL: Q-Learning Info ===== -->
+  <rect x="550" y="80" width="230" height="400" rx="8" fill="#111111" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="665" y="103" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#3fb950">Q-Learning Agent</text>
+  <line x1="560" y1="110" x2="770" y2="110" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Episode / reward info -->
+  <text x="560" y="128" font-family="monospace" font-size="10" fill="#8b949e">Episode:</text>
+  <text x="650" y="128" font-family="monospace" font-size="10" font-weight="bold" fill="#3fb950">847</text>
+  <text x="560" y="146" font-family="monospace" font-size="10" fill="#8b949e">Reward:</text>
+  <text x="650" y="146" font-family="monospace" font-size="10" font-weight="bold" fill="#3fb950">+50</text>
+  <text x="560" y="164" font-family="monospace" font-size="10" fill="#8b949e">Strategy:</text>
+  <text x="650" y="164" font-family="monospace" font-size="10" fill="#e3b341">ε-greedy</text>
+  <text x="560" y="182" font-family="monospace" font-size="10" fill="#8b949e">Epsilon:</text>
+  <text x="650" y="182" font-family="monospace" font-size="10" fill="#58a6ff">0.12</text>
+  <text x="560" y="200" font-family="monospace" font-size="10" fill="#8b949e">Gamma:</text>
+  <text x="650" y="200" font-family="monospace" font-size="10" fill="#58a6ff">0.95</text>
+  <text x="560" y="218" font-family="monospace" font-size="10" fill="#8b949e">Alpha:</text>
+  <text x="650" y="218" font-family="monospace" font-size="10" fill="#58a6ff">0.001</text>
+
+  <line x1="560" y1="228" x2="770" y2="228" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Q-Table visualization (small grid) -->
+  <text x="665" y="244" text-anchor="middle" font-family="monospace" font-size="10" fill="#bc8cff">Q-Table (state sample)</text>
+
+  <!-- Action header -->
+  <text x="620" y="260" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">↑</text>
+  <text x="648" y="260" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">↓</text>
+  <text x="676" y="260" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">←</text>
+  <text x="704" y="260" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">→</text>
+
+  <!-- Q-table rows -->
+  <text x="558" y="275" font-family="monospace" font-size="8" fill="#8b949e">s₁</text>
+  <rect x="606" y="264" width="25" height="14" rx="1" fill="#1a3a1a"/>
+  <text x="618" y="274" text-anchor="middle" font-family="monospace" font-size="7" fill="#3fb950">0.82</text>
+  <rect x="634" y="264" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="646" y="274" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.31</text>
+  <rect x="662" y="264" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="674" y="274" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.24</text>
+  <rect x="690" y="264" width="25" height="14" rx="1" fill="#1a2a3a"/>
+  <text x="702" y="274" text-anchor="middle" font-family="monospace" font-size="7" fill="#58a6ff">0.67</text>
+
+  <text x="558" y="293" font-family="monospace" font-size="8" fill="#8b949e">s₂</text>
+  <rect x="606" y="282" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="618" y="292" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.18</text>
+  <rect x="634" y="282" width="25" height="14" rx="1" fill="#1a2a3a"/>
+  <text x="646" y="292" text-anchor="middle" font-family="monospace" font-size="7" fill="#58a6ff">0.74</text>
+  <rect x="662" y="282" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="674" y="292" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.42</text>
+  <rect x="690" y="282" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="702" y="292" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.29</text>
+
+  <text x="558" y="311" font-family="monospace" font-size="8" fill="#8b949e">s₃</text>
+  <rect x="606" y="300" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="618" y="310" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.55</text>
+  <rect x="634" y="300" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="646" y="310" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.33</text>
+  <rect x="662" y="300" width="25" height="14" rx="1" fill="#1a1a2a"/>
+  <text x="674" y="310" text-anchor="middle" font-family="monospace" font-size="7" fill="#bc8cff">0.91</text>
+  <rect x="690" y="300" width="25" height="14" rx="1" fill="#0d1117"/>
+  <text x="702" y="310" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">0.47</text>
+
+  <line x1="560" y1="322" x2="770" y2="322" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Reward chart -->
+  <text x="665" y="338" text-anchor="middle" font-family="monospace" font-size="10" fill="#e3b341">Reward per Episode</text>
+  <line x1="562" y1="350" x2="562" y2="408" stroke="#30363d" stroke-width="1"/>
+  <line x1="562" y1="408" x2="768" y2="408" stroke="#30363d" stroke-width="1"/>
+  <polyline points="562,405 575,400 588,395 601,388 614,380 627,376 640,368 653,360 666,355 679,348 692,344 705,340 718,337 731,334 744,331 757,329 768,326"
+    fill="none" stroke="#3fb950" stroke-width="1.8"/>
+  <polygon points="562,405 575,400 588,395 601,388 614,380 627,376 640,368 653,360 666,355 679,348 692,344 705,340 718,337 731,334 744,331 757,329 768,326 768,408 562,408"
+    fill="#3fb95022"/>
+  <text x="562" y="422" font-family="monospace" font-size="8" fill="#8b949e">0</text>
+  <text x="750" y="422" font-family="monospace" font-size="8" fill="#8b949e">847</text>
+
+  <!-- BFS label -->
+  <text x="665" y="445" text-anchor="middle" font-family="monospace" font-size="9" fill="#58a6ff">BFS pathfinding to pellets</text>
+  <text x="665" y="460" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">RL policy for ghost avoidance</text>
 </svg>

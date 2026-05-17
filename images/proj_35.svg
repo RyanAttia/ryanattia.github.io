@@ -1,69 +1,154 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
-  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a1a2e"/></linearGradient></defs>
-  <rect width="800" height="500" fill="url(#bg)"/>
-  <!-- PDF document -->
-  <rect x="70" y="130" width="200" height="280" rx="4" fill="#f0f6fc" stroke="#30363d" stroke-width="1.5"/>
-  <rect x="70" y="130" width="200" height="32" rx="4" fill="#f85149"/>
-  <text x="170" y="152" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">PDF</text>
-  <!-- Dog-ear -->
-  <polygon points="250,130 270,130 270,150" fill="#d0d7de"/>
-  <!-- Content lines -->
-  <rect x="85" y="175" width="170" height="6" rx="2" fill="#d0d7de"/>
-  <rect x="85" y="188" width="155" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="199" width="165" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="210" width="140" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="228" width="170" height="6" rx="2" fill="#d0d7de"/>
-  <rect x="85" y="240" width="160" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="251" width="150" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="262" width="168" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="280" width="170" height="6" rx="2" fill="#d0d7de"/>
-  <rect x="85" y="292" width="155" height="5" rx="2" fill="#e6edf3"/>
-  <rect x="85" y="303" width="162" height="5" rx="2" fill="#e6edf3"/>
-  <!-- Arrow -->
-  <line x1="285" y1="270" x2="335" y2="270" stroke="#58a6ff" stroke-width="2.5"/>
-  <polygon points="335,263 350,270 335,277" fill="#58a6ff"/>
-  <!-- NLP pipeline -->
-  <rect x="350" y="150" width="120" height="50" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
-  <text x="410" y="172" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">Text</text>
-  <text x="410" y="187" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">Extraction</text>
-  <line x1="410" y1="200" x2="410" y2="230" stroke="#58a6ff" stroke-width="1.5"/>
-  <polygon points="403,230 410,245 417,230" fill="#58a6ff"/>
-  <rect x="350" y="245" width="120" height="50" rx="6" fill="#161b22" stroke="#bc8cff" stroke-width="1.5"/>
-  <text x="410" y="267" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="10">NLP</text>
-  <text x="410" y="282" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="10">Analysis</text>
-  <line x1="410" y1="295" x2="410" y2="325" stroke="#bc8cff" stroke-width="1.5"/>
-  <polygon points="403,325 410,340 417,325" fill="#bc8cff"/>
-  <rect x="350" y="340" width="120" height="50" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
-  <text x="410" y="362" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">Insights</text>
-  <text x="410" y="377" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">Generated</text>
-  <!-- Results panel -->
-  <rect x="510" y="130" width="260" height="310" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
-  <text x="640" y="155" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="12" font-weight="bold">StudySnap Results</text>
-  <line x1="510" y1="165" x2="770" y2="165" stroke="#30363d" stroke-width="1"/>
+  <defs>
+    <linearGradient id="bg35" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg35)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#58a6ff">StudySnap PDF Analysis</text>
+  <text x="400" y="60" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Python · Flask · NLP · spaCy · PDF Processing</text>
+
+  <!-- ===== LEFT: PDF Document ===== -->
+  <rect x="45" y="80" width="185" height="330" rx="5" fill="#f0f6fc" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- PDF header -->
+  <rect x="45" y="80" width="185" height="28" rx="5" fill="#2d333b"/>
+  <rect x="45" y="96" width="185" height="12" fill="#2d333b"/>
+  <text x="137" y="97" text-anchor="middle" font-family="monospace" font-size="9" fill="#c9d1d9">lecture_notes.pdf</text>
+  <!-- PDF icon -->
+  <rect x="55" y="88" width="22" height="12" rx="2" fill="#f85149"/>
+  <text x="66" y="97" text-anchor="middle" font-family="monospace" font-size="7" fill="#ffffff">PDF</text>
+
+  <!-- PDF content (text lines) -->
+  <rect x="60" y="118" width="80" height="7" rx="2" fill="#1f6feb"/>
+  <rect x="60" y="131" width="155" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="140" width="148" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="149" width="152" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="158" width="140" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+
+  <line x1="60" y1="170" x2="216" y2="170" stroke="#d0d7de" stroke-width="0.8"/>
+  <rect x="60" y="177" width="70" height="6" rx="2" fill="#1f6feb"/>
+  <rect x="60" y="189" width="155" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="198" width="143" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="207" width="150" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+
+  <!-- Highlighted text sections -->
+  <rect x="60" y="220" width="155" height="4" rx="2" fill="#fff8c5" opacity="0.9"/>
+  <rect x="60" y="229" width="148" height="4" rx="2" fill="#fff8c5" opacity="0.9"/>
+  <rect x="60" y="238" width="130" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+
+  <line x1="60" y1="250" x2="216" y2="250" stroke="#d0d7de" stroke-width="0.8"/>
+  <rect x="60" y="257" width="60" height="6" rx="2" fill="#1f6feb"/>
+  <rect x="60" y="269" width="155" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="278" width="140" height="4" rx="2" fill="#ddf4ff" opacity="0.9"/>
+  <rect x="60" y="287" width="148" height="4" rx="2" fill="#ddf4ff" opacity="0.9"/>
+  <rect x="60" y="296" width="135" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="305" width="152" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="314" width="145" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="323" width="138" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="332" width="150" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="341" width="142" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="350" width="155" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+  <rect x="60" y="362" width="100" height="4" rx="2" fill="#c9d1d9" opacity="0.5"/>
+
+  <!-- Page number -->
+  <text x="137" y="400" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e">Page 1 of 24</text>
+
+  <!-- Upload button -->
+  <rect x="65" y="408" width="150" height="20" rx="4" fill="#1f6feb"/>
+  <text x="140" y="421" text-anchor="middle" font-family="monospace" font-size="9" fill="#ffffff">Upload PDF →</text>
+
+  <!-- ===== CENTER: NLP Pipeline (3 stacked boxes) ===== -->
+  <!-- Arrow from PDF to Text Extraction -->
+  <line x1="230" y1="195" x2="285" y2="195" stroke="#58a6ff" stroke-width="2.5"/>
+  <polygon points="279,189 293,195 279,201" fill="#58a6ff"/>
+
+  <!-- Box 1: Text Extraction (TOP) -->
+  <rect x="293" y="120" width="190" height="80" rx="6" fill="#0d2a4a" stroke="#58a6ff" stroke-width="2"/>
+  <text x="388" y="143" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#58a6ff">Text Extraction</text>
+  <text x="388" y="159" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">PyPDF2 · pdfminer</text>
+  <text x="388" y="173" text-anchor="middle" font-family="monospace" font-size="9" fill="#c9d1d9">Parses raw PDF text</text>
+  <text x="388" y="188" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">24 pages → 18,420 tokens</text>
+
+  <!-- Arrow from Text Extraction down to NLP Analysis -->
+  <line x1="388" y1="200" x2="388" y2="228" stroke="#58a6ff" stroke-width="2"/>
+  <polygon points="382,222 388,236 394,222" fill="#58a6ff"/>
+
+  <!-- Box 2: NLP Analysis (MIDDLE) -->
+  <rect x="293" y="236" width="190" height="80" rx="6" fill="#2a0d4a" stroke="#bc8cff" stroke-width="2"/>
+  <text x="388" y="259" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#bc8cff">NLP Analysis</text>
+  <text x="388" y="275" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">spaCy · NLTK · TF-IDF</text>
+  <text x="388" y="289" text-anchor="middle" font-family="monospace" font-size="9" fill="#c9d1d9">Entity · Topic · Sentiment</text>
+  <text x="388" y="304" text-anchor="middle" font-family="monospace" font-size="8" fill="#bc8cff">Extracts key concepts</text>
+
+  <!-- Arrow from NLP Analysis down to Insights -->
+  <line x1="388" y1="316" x2="388" y2="344" stroke="#bc8cff" stroke-width="2"/>
+  <polygon points="382,338 388,352 394,338" fill="#bc8cff"/>
+
+  <!-- Box 3: Insights Generated (BOTTOM) -->
+  <rect x="293" y="352" width="190" height="80" rx="6" fill="#0d2a0d" stroke="#3fb950" stroke-width="2"/>
+  <text x="388" y="375" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#3fb950">Insights Generated</text>
+  <text x="388" y="391" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">Summary · Quiz · Flashcards</text>
+  <text x="388" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#c9d1d9">Key terms · Mind map</text>
+  <text x="388" y="420" text-anchor="middle" font-family="monospace" font-size="8" fill="#3fb950">Flask API → JSON response</text>
+
+  <!-- Arrow from Insights to Results panel -->
+  <line x1="483" y1="390" x2="518" y2="390" stroke="#3fb950" stroke-width="2.5"/>
+  <polygon points="512,384 526,390 512,396" fill="#3fb950"/>
+
+  <!-- ===== RIGHT: Results Panel ===== -->
+  <rect x="526" y="80" width="250" height="390" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="651" y="103" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#c9d1d9">Analysis Results</text>
+  <line x1="536" y1="110" x2="766" y2="110" stroke="#30363d" stroke-width="1"/>
+
   <!-- Summary section -->
-  <text x="525" y="185" fill="#8b949e" font-family="monospace" font-size="9" font-weight="bold">SUMMARY</text>
-  <rect x="525" y="192" width="230" height="40" rx="3" fill="#0d1117"/>
-  <text x="640" y="207" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="8">This document explores machine</text>
-  <text x="640" y="219" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="8">learning methods for classification...</text>
-  <!-- Key terms -->
-  <text x="525" y="252" fill="#8b949e" font-family="monospace" font-size="9" font-weight="bold">KEY TERMS</text>
-  <rect x="525" y="258" width="68" height="18" rx="9" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1"/><text x="559" y="271" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="8">neural net</text>
-  <rect x="600" y="258" width="55" height="18" rx="9" fill="#bc8cff22" stroke="#bc8cff" stroke-width="1"/><text x="627" y="271" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="8">gradient</text>
-  <rect x="662" y="258" width="85" height="18" rx="9" fill="#3fb95022" stroke="#3fb950" stroke-width="1"/><text x="704" y="271" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="8">backprop</text>
-  <rect x="525" y="282" width="62" height="18" rx="9" fill="#e3b34122" stroke="#e3b341" stroke-width="1"/><text x="556" y="295" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="8">accuracy</text>
-  <rect x="594" y="282" width="48" height="18" rx="9" fill="#f8516922" stroke="#f85169" stroke-width="1"/><text x="618" y="295" text-anchor="middle" fill="#f85169" font-family="monospace" font-size="8">loss fn</text>
-  <!-- Word count / stats -->
-  <line x1="510" y1="312" x2="770" y2="312" stroke="#30363d" stroke-width="1"/>
-  <text x="525" y="330" fill="#8b949e" font-family="monospace" font-size="9" font-weight="bold">DOCUMENT STATS</text>
-  <text x="525" y="348" fill="#8b949e" font-family="monospace" font-size="9">Words:  4,821</text>
-  <text x="525" y="363" fill="#8b949e" font-family="monospace" font-size="9">Pages:  12</text>
-  <text x="525" y="378" fill="#8b949e" font-family="monospace" font-size="9">Sentences: 234</text>
-  <text x="650" y="348" fill="#8b949e" font-family="monospace" font-size="9">Readability: B+</text>
-  <text x="650" y="363" fill="#8b949e" font-family="monospace" font-size="9">Lang: English</text>
-  <text x="650" y="378" fill="#3fb950" font-family="monospace" font-size="9">✓ Analysis done</text>
-  <!-- Flask badge -->
-  <rect x="525" y="398" width="230" height="28" rx="4" fill="#21262d"/>
-  <text x="640" y="417" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Flask · REST API · pdfplumber · spaCy</text>
-  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="19" font-weight="bold">StudySnap — PDF Document Analysis</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · Flask · NLP · PDF Parsing</text>
+  <text x="536" y="127" font-family="monospace" font-size="10" font-weight="bold" fill="#58a6ff">Summary</text>
+  <rect x="536" y="133" width="230" height="55" rx="3" fill="#0d1117"/>
+  <text x="541" y="147" font-family="monospace" font-size="8" fill="#c9d1d9">This document covers fundamental</text>
+  <text x="541" y="159" font-family="monospace" font-size="8" fill="#c9d1d9">concepts in machine learning including</text>
+  <text x="541" y="171" font-family="monospace" font-size="8" fill="#c9d1d9">supervised learning, neural networks,</text>
+  <text x="541" y="181" font-family="monospace" font-size="8" fill="#c9d1d9">and gradient descent optimization.</text>
+
+  <!-- Key Terms -->
+  <text x="536" y="206" font-family="monospace" font-size="10" font-weight="bold" fill="#bc8cff">Key Terms</text>
+  <rect x="536" y="212" width="72" height="16" rx="3" fill="#2a0d4a" stroke="#bc8cff" stroke-width="1"/>
+  <text x="572" y="223" text-anchor="middle" font-family="monospace" font-size="8" fill="#bc8cff">Backprop</text>
+  <rect x="614" y="212" width="62" height="16" rx="3" fill="#2a0d4a" stroke="#bc8cff" stroke-width="1"/>
+  <text x="645" y="223" text-anchor="middle" font-family="monospace" font-size="8" fill="#bc8cff">Gradient</text>
+  <rect x="682" y="212" width="74" height="16" rx="3" fill="#2a0d4a" stroke="#bc8cff" stroke-width="1"/>
+  <text x="719" y="223" text-anchor="middle" font-family="monospace" font-size="8" fill="#bc8cff">Overfitting</text>
+  <rect x="536" y="232" width="64" height="16" rx="3" fill="#0d2a4a" stroke="#58a6ff" stroke-width="1"/>
+  <text x="568" y="243" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">CNN / RNN</text>
+  <rect x="606" y="232" width="64" height="16" rx="3" fill="#0d2a4a" stroke="#58a6ff" stroke-width="1"/>
+  <text x="638" y="243" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">Softmax</text>
+  <rect x="676" y="232" width="74" height="16" rx="3" fill="#0d2a4a" stroke="#58a6ff" stroke-width="1"/>
+  <text x="713" y="243" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">Loss function</text>
+
+  <!-- Quiz generated -->
+  <text x="536" y="268" font-family="monospace" font-size="10" font-weight="bold" fill="#e3b341">Generated Quiz</text>
+  <rect x="536" y="274" width="230" height="68" rx="3" fill="#0d1117"/>
+  <text x="541" y="288" font-family="monospace" font-size="8" fill="#e3b341">Q1: What is the purpose of backpropagation?</text>
+  <text x="541" y="300" font-family="monospace" font-size="8" fill="#c9d1d9">   a) Initialize weights</text>
+  <text x="541" y="312" font-family="monospace" font-size="8" fill="#3fb950">   b) Compute gradients ✓</text>
+  <text x="541" y="324" font-family="monospace" font-size="8" fill="#c9d1d9">   c) Normalize inputs</text>
+  <text x="541" y="336" font-family="monospace" font-size="8" fill="#c9d1d9">   d) Split dataset</text>
+
+  <!-- Flashcards -->
+  <text x="536" y="360" font-family="monospace" font-size="10" font-weight="bold" fill="#3fb950">Flashcards (12 generated)</text>
+  <rect x="536" y="366" width="109" height="45" rx="3" fill="#0d2a0d" stroke="#3fb950" stroke-width="1"/>
+  <text x="590" y="381" text-anchor="middle" font-family="monospace" font-size="8" fill="#3fb950">FRONT</text>
+  <text x="590" y="393" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9d1d9">What is dropout?</text>
+  <text x="590" y="405" text-anchor="middle" font-family="monospace" font-size="7" fill="#8b949e">Regularization technique</text>
+  <rect x="651" y="366" width="109" height="45" rx="3" fill="#0d1f3a" stroke="#58a6ff" stroke-width="1"/>
+  <text x="705" y="381" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">BACK</text>
+  <text x="705" y="393" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9d1d9">Randomly disables</text>
+  <text x="705" y="405" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9d1d9">neurons during training</text>
+
+  <!-- Stats -->
+  <rect x="536" y="420" width="230" height="40" rx="3" fill="#0d1117"/>
+  <text x="536" y="436" font-family="monospace" font-size="8" fill="#8b949e">Pages: 24  |  Tokens: 18,420  |  Topics: 7</text>
+  <text x="536" y="450" font-family="monospace" font-size="8" fill="#8b949e">Quiz Qs: 12  |  Flashcards: 12  |  Time: 1.2s</text>
 </svg>
