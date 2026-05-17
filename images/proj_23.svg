@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
     <linearGradient id="bg23" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117"/>
@@ -147,5 +147,4 @@
   <text x="580" y="415" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">HCS12 Assembly · Keypad Matrix · LCD Output</text>
 
   <!-- Footer -->
-  <text x="400" y="465" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Embedded Systems · Assembly Language · HCS12 MCU</text>
 </svg>

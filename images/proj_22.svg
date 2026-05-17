@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0d1f0d"/></linearGradient></defs>
   <rect width="800" height="500" fill="url(#bg)"/>
   <!-- Oscilloscope screen -->
@@ -31,5 +31,4 @@
   <line x1="750" y1="210" x2="770" y2="210" stroke="#e3b341" stroke-width="1.5"/>
   <line x1="750" y1="230" x2="770" y2="230" stroke="#e3b341" stroke-width="1.5"/>
   <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold">Analog Signal Acquisition — HCS12</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Assembly · Embedded · Waveform Generation</text>
 </svg>

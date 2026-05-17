@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
     <linearGradient id="bg35" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117"/>
@@ -9,7 +9,6 @@
 
   <!-- Title -->
   <text x="400" y="38" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#58a6ff">StudySnap PDF Analysis</text>
-  <text x="400" y="60" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">Python · Flask · NLP · spaCy · PDF Processing</text>
 
   <!-- ===== LEFT: PDF Document ===== -->
   <rect x="45" y="80" width="185" height="330" rx="5" fill="#f0f6fc" stroke="#30363d" stroke-width="1.5"/>
