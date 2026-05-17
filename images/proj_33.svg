@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0d1f0d"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Chart area -->
+  <rect x="70" y="130" width="540" height="280" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Grid -->
+  <line x1="70" y1="200" x2="610" y2="200" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <line x1="70" y1="250" x2="610" y2="250" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <line x1="70" y1="300" x2="610" y2="300" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <line x1="70" y1="350" x2="610" y2="350" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <!-- Historical price line -->
+  <polyline points="90,320 130,310 170,330 210,280 250,260 290,270 330,240 370,250 410,220 450,230" fill="none" stroke="#58a6ff" stroke-width="2.5"/>
+  <!-- Confidence band (forecast) -->
+  <polygon points="450,230 490,200 530,175 570,160 610,145 610,185 570,205 530,225 490,240 450,230" fill="#3fb95022"/>
+  <polygon points="450,230 490,240 530,265 570,285 610,305 610,265 570,250 530,230 490,215 450,230" fill="#3fb95022"/>
+  <!-- Forecast line -->
+  <polyline points="450,230 490,220 530,198 570,183 610,165" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <!-- Confidence boundary lines -->
+  <polyline points="450,230 490,200 530,175 570,160 610,145" fill="none" stroke="#3fb95066" stroke-width="1" stroke-dasharray="4,4"/>
+  <polyline points="450,230 490,240 530,265 570,285 610,305" fill="none" stroke="#3fb95066" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Divider line (now) -->
+  <line x1="450" y1="130" x2="450" y2="410" stroke="#e3b341" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="455" y="148" fill="#e3b341" font-family="monospace" font-size="10">NOW</text>
+  <!-- Axes labels -->
+  <text x="90" y="425" fill="#8b949e" font-family="monospace" font-size="9">Jan</text>
+  <text x="210" y="425" fill="#8b949e" font-family="monospace" font-size="9">Feb</text>
+  <text x="330" y="425" fill="#8b949e" font-family="monospace" font-size="9">Mar</text>
+  <text x="450" y="425" fill="#8b949e" font-family="monospace" font-size="9">Apr</text>
+  <text x="570" y="425" fill="#8b949e" font-family="monospace" font-size="9">May</text>
+  <!-- Y labels -->
+  <text x="48" y="204" fill="#8b949e" font-family="monospace" font-size="9">$195</text>
+  <text x="48" y="254" fill="#8b949e" font-family="monospace" font-size="9">$185</text>
+  <text x="48" y="304" fill="#8b949e" font-family="monospace" font-size="9">$175</text>
+  <text x="48" y="354" fill="#8b949e" font-family="monospace" font-size="9">$165</text>
+  <!-- NLP query box -->
+  <rect x="640" y="130" width="140" height="55" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="710" y="150" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8">"What will AAPL</text>
+  <text x="710" y="163" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8"> be in 2 weeks?"</text>
+  <text x="710" y="178" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="8">→ parsed ✓</text>
+  <!-- Prediction card -->
+  <rect x="640" y="200" width="140" height="140" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="710" y="222" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">AAPL Forecast</text>
+  <text x="710" y="248" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="22" font-weight="bold">$198</text>
+  <text x="710" y="267" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">↑ +4.2%</text>
+  <line x1="650" y1="278" x2="770" y2="278" stroke="#30363d" stroke-width="1"/>
+  <text x="710" y="296" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8">95% CI:</text>
+  <text x="710" y="311" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8">$191 — $205</text>
+  <text x="710" y="330" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8">ARIMA · 14 days</text>
+  <!-- Legend -->
+  <line x1="90" y1="450" x2="115" y2="450" stroke="#58a6ff" stroke-width="2.5"/>
+  <text x="120" y="454" fill="#8b949e" font-family="monospace" font-size="9">Historical</text>
+  <line x1="190" y1="450" x2="215" y2="450" stroke="#3fb950" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="220" y="454" fill="#8b949e" font-family="monospace" font-size="9">Forecast</text>
+  <rect x="300" y="443" width="12" height="12" fill="#3fb95022" stroke="#3fb95066" stroke-width="1"/>
+  <text x="317" y="454" fill="#8b949e" font-family="monospace" font-size="9">Confidence Band</text>
+  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold">Stock Market Predictor</text>
+  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · ARIMA · NLP · Matplotlib</text>
+</svg>

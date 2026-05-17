@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a0d2e"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- FPGA block -->
+  <rect x="80" y="150" width="180" height="220" rx="6" fill="#161b22" stroke="#bc8cff" stroke-width="2.5"/>
+  <text x="170" y="190" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="13" font-weight="bold">FPGA</text>
+  <!-- LUT grid inside FPGA -->
+  <rect x="100" y="205" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="120" y="225" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">LUT</text>
+  <rect x="150" y="205" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="170" y="225" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">LUT</text>
+  <rect x="200" y="205" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="220" y="225" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">LUT</text>
+  <rect x="100" y="245" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="120" y="265" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">FF</text>
+  <rect x="150" y="245" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="170" y="265" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">FF</text>
+  <rect x="200" y="245" width="40" height="30" rx="3" fill="#21262d" stroke="#bc8cff66" stroke-width="1"/><text x="220" y="265" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="9">DSP</text>
+  <text x="170" y="310" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Vivado HLS</text>
+  <!-- Arrow: HLS → RTL -->
+  <line x1="270" y1="260" x2="330" y2="260" stroke="#58a6ff" stroke-width="2"/>
+  <polygon points="330,254 345,260 330,266" fill="#58a6ff"/>
+  <!-- RTL / FIR filter block -->
+  <rect x="345" y="195" width="200" height="130" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="445" y="228" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="13">FIR Filter</text>
+  <!-- Tapped delay line -->
+  <rect x="360" y="240" width="30" height="25" rx="2" fill="#21262d" stroke="#58a6ff66" stroke-width="1"/><text x="375" y="257" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">z⁻¹</text>
+  <rect x="400" y="240" width="30" height="25" rx="2" fill="#21262d" stroke="#58a6ff66" stroke-width="1"/><text x="415" y="257" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">z⁻¹</text>
+  <rect x="440" y="240" width="30" height="25" rx="2" fill="#21262d" stroke="#58a6ff66" stroke-width="1"/><text x="455" y="257" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">z⁻¹</text>
+  <rect x="480" y="240" width="30" height="25" rx="2" fill="#21262d" stroke="#58a6ff66" stroke-width="1"/><text x="495" y="257" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">z⁻¹</text>
+  <line x1="390" y1="253" x2="400" y2="253" stroke="#58a6ff" stroke-width="1"/>
+  <line x1="430" y1="253" x2="440" y2="253" stroke="#58a6ff" stroke-width="1"/>
+  <line x1="470" y1="253" x2="480" y2="253" stroke="#58a6ff" stroke-width="1"/>
+  <text x="445" y="305" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">h₀  h₁  h₂  h₃</text>
+  <!-- Arrow: RTL → IP -->
+  <line x1="545" y1="260" x2="605" y2="260" stroke="#3fb950" stroke-width="2"/>
+  <polygon points="605,254 620,260 605,266" fill="#3fb950"/>
+  <!-- IP Package -->
+  <rect x="620" y="195" width="150" height="130" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="695" y="235" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="12">IP Core</text>
+  <text x="695" y="255" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="12">Package</text>
+  <rect x="640" y="268" width="110" height="22" rx="3" fill="#21262d" stroke="#3fb95066" stroke-width="1"/>
+  <text x="695" y="283" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">AXI4-Stream I/F</text>
+  <rect x="640" y="296" width="110" height="22" rx="3" fill="#21262d" stroke="#3fb95066" stroke-width="1"/>
+  <text x="695" y="311" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Packaged .xci</text>
+  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="17" font-weight="bold">HLS FIR Design &amp; IP Packaging</text>
+  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Verilog · HLS · FPGA · Vivado</text>
+</svg>

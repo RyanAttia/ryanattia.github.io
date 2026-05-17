@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a2332"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Logic gates -->
+  <!-- AND gate -->
+  <path d="M100 175 L100 225 L130 225 Q160 225 160 200 Q160 175 130 175 Z" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="124" y="205" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">AND</text>
+  <line x1="70" y1="185" x2="100" y2="185" stroke="#58a6ff" stroke-width="1.5"/>
+  <line x1="70" y1="215" x2="100" y2="215" stroke="#58a6ff" stroke-width="1.5"/>
+  <line x1="160" y1="200" x2="185" y2="200" stroke="#58a6ff" stroke-width="1.5"/>
+  <!-- OR gate -->
+  <path d="M100 275 Q115 300 100 325 Q130 325 155 300 Q130 275 100 275 Z" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="128" y="305" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">OR</text>
+  <line x1="70" y1="285" x2="103" y2="285" stroke="#3fb950" stroke-width="1.5"/>
+  <line x1="70" y1="315" x2="103" y2="315" stroke="#3fb950" stroke-width="1.5"/>
+  <line x1="155" y1="300" x2="185" y2="300" stroke="#3fb950" stroke-width="1.5"/>
+  <!-- NOT gate -->
+  <polygon points="230,175 230,225 265,200" fill="#161b22" stroke="#e3b341" stroke-width="2"/>
+  <circle cx="268" cy="200" r="5" fill="#161b22" stroke="#e3b341" stroke-width="2"/>
+  <text x="247" y="248" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="10">NOT</text>
+  <line x1="200" y1="200" x2="230" y2="200" stroke="#e3b341" stroke-width="1.5"/>
+  <line x1="273" y1="200" x2="295" y2="200" stroke="#e3b341" stroke-width="1.5"/>
+  <!-- Truth table -->
+  <rect x="330" y="130" width="240" height="200" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="450" y="155" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">Truth Table</text>
+  <line x1="330" y1="165" x2="570" y2="165" stroke="#30363d" stroke-width="1"/>
+  <text x="365" y="185" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="11">P</text>
+  <text x="405" y="185" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="11">Q</text>
+  <text x="455" y="185" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="11">P∧Q</text>
+  <text x="515" y="185" text-anchor="middle" fill="#e3b341" font-family="monospace" font-size="11">P∨Q</text>
+  <line x1="330" y1="195" x2="570" y2="195" stroke="#30363d" stroke-width="1"/>
+  <text x="365" y="215" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">T</text><text x="405" y="215" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">T</text><text x="455" y="215" fill="#3fb950" font-family="monospace" font-size="11" text-anchor="middle">T</text><text x="515" y="215" fill="#e3b341" font-family="monospace" font-size="11" text-anchor="middle">T</text>
+  <text x="365" y="235" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">T</text><text x="405" y="235" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="455" y="235" fill="#f85149" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="515" y="235" fill="#e3b341" font-family="monospace" font-size="11" text-anchor="middle">T</text>
+  <text x="365" y="255" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="405" y="255" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">T</text><text x="455" y="255" fill="#f85149" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="515" y="255" fill="#e3b341" font-family="monospace" font-size="11" text-anchor="middle">T</text>
+  <text x="365" y="275" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="405" y="275" fill="#8b949e" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="455" y="275" fill="#f85149" font-family="monospace" font-size="11" text-anchor="middle">F</text><text x="515" y="275" fill="#f85149" font-family="monospace" font-size="11" text-anchor="middle">F</text>
+  <!-- Inference box -->
+  <rect x="330" y="355" width="380" height="60" rx="4" fill="#161b22" stroke="#bc8cff" stroke-width="1.5"/>
+  <text x="520" y="378" text-anchor="middle" fill="#bc8cff" font-family="monospace" font-size="11">Resolution: (P∨Q) ∧ (¬P∨R) ⊢ (Q∨R)</text>
+  <text x="520" y="400" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Modus Ponens · Unification · KB Inference</text>
+  <!-- Expression -->
+  <rect x="60" y="355" width="245" height="60" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="182" y="378" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="12">(A ∧ B) → C</text>
+  <text x="182" y="400" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="11">CNF · DNF · simplify</text>
+  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="17" font-weight="bold">Logical Expression Manipulation</text>
+  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · Propositional Logic · AI Inference</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a0d0d"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Neural network layers -->
+  <!-- Input layer -->
+  <text x="110" y="130" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Input</text>
+  <circle cx="110" cy="170" r="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="110" cy="215" r="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="110" cy="260" r="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="110" cy="305" r="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="110" cy="350" r="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="110" y="174" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="7">age</text>
+  <text x="110" y="219" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="7">A1C</text>
+  <text x="110" y="264" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="7">gluc</text>
+  <text x="110" y="309" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="7">meds</text>
+  <text x="110" y="354" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="7">visits</text>
+  <!-- Hidden layer 1 -->
+  <text x="255" y="130" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Hidden</text>
+  <circle cx="255" cy="180" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="255" cy="230" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="255" cy="280" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="255" cy="330" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <!-- Connections input→h1 -->
+  <g stroke="#58a6ff22" stroke-width="1">
+    <line x1="124" y1="170" x2="241" y2="180"/><line x1="124" y1="170" x2="241" y2="230"/><line x1="124" y1="170" x2="241" y2="280"/>
+    <line x1="124" y1="215" x2="241" y2="180"/><line x1="124" y1="215" x2="241" y2="230"/><line x1="124" y1="215" x2="241" y2="330"/>
+    <line x1="124" y1="260" x2="241" y2="180"/><line x1="124" y1="260" x2="241" y2="280"/><line x1="124" y1="260" x2="241" y2="330"/>
+    <line x1="124" y1="305" x2="241" y2="230"/><line x1="124" y1="305" x2="241" y2="280"/><line x1="124" y1="305" x2="241" y2="330"/>
+    <line x1="124" y1="350" x2="241" y2="180"/><line x1="124" y1="350" x2="241" y2="230"/><line x1="124" y1="350" x2="241" y2="330"/>
+  </g>
+  <!-- Hidden layer 2 -->
+  <circle cx="390" cy="205" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="390" cy="255" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="390" cy="305" r="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/>
+  <g stroke="#bc8cff22" stroke-width="1">
+    <line x1="269" y1="180" x2="376" y2="205"/><line x1="269" y1="180" x2="376" y2="255"/>
+    <line x1="269" y1="230" x2="376" y2="205"/><line x1="269" y1="230" x2="376" y2="305"/>
+    <line x1="269" y1="280" x2="376" y2="255"/><line x1="269" y1="280" x2="376" y2="305"/>
+    <line x1="269" y1="330" x2="376" y2="205"/><line x1="269" y1="330" x2="376" y2="255"/>
+  </g>
+  <!-- Output -->
+  <text x="510" y="130" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Output</text>
+  <circle cx="510" cy="255" r="18" fill="#161b22" stroke="#f85149" stroke-width="2.5"/>
+  <text x="510" y="260" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="9">risk%</text>
+  <line x1="404" y1="205" x2="492" y2="255" stroke="#f8514944" stroke-width="1.5"/>
+  <line x1="404" y1="255" x2="492" y2="255" stroke="#f8514944" stroke-width="1.5"/>
+  <line x1="404" y1="305" x2="492" y2="255" stroke="#f8514944" stroke-width="1.5"/>
+  <!-- Chatbot panel -->
+  <rect x="560" y="130" width="210" height="300" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="665" y="155" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="11">DFU Chatbot</text>
+  <line x1="560" y1="165" x2="770" y2="165" stroke="#30363d" stroke-width="1"/>
+  <rect x="575" y="175" width="150" height="28" rx="12" fill="#21262d"/>
+  <text x="650" y="194" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">What is your age?</text>
+  <rect x="600" y="212" width="125" height="24" rx="10" fill="#3fb95033" stroke="#3fb950" stroke-width="1"/>
+  <text x="662" y="228" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="9">I am 67 years old</text>
+  <rect x="575" y="244" width="155" height="28" rx="12" fill="#21262d"/>
+  <text x="652" y="263" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Last A1C reading?</text>
+  <rect x="600" y="280" width="125" height="24" rx="10" fill="#3fb95033" stroke="#3fb950" stroke-width="1"/>
+  <text x="662" y="296" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="9">8.4</text>
+  <rect x="575" y="312" width="180" height="36" rx="6" fill="#f8514922" stroke="#f85149" stroke-width="1.5"/>
+  <text x="665" y="328" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="9">Risk: HIGH — 78.3%</text>
+  <text x="665" y="342" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="8">Consult physician</text>
+  <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="17" font-weight="bold">DFU Chatbot &amp; Classification Network</text>
+  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">Python · Deep Learning · Healthcare AI</text>
+</svg>
