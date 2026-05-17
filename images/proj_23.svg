@@ -9,7 +9,6 @@
 
   <!-- Title -->
   <text x="400" y="42" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#3fb950">Calculator &amp; Digital Clock</text>
-  <text x="400" y="66" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">HCS12 MCU · Assembly Language</text>
 
   <!-- ===== LEFT: DIGITAL CLOCK DISPLAY ===== -->
   <rect x="40" y="90" width="340" height="320" rx="8" fill="#0a0a0a" stroke="#3fb950" stroke-width="2"/>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#1a2332"/></linearGradient></defs>
   <rect width="800" height="500" fill="url(#bg)"/>
   <!-- File tree -->
@@ -32,5 +32,4 @@
   <text x="415" y="270" fill="#3fb950" font-family="monospace" font-size="10">  prefix check →</text>
   <text x="415" y="285" fill="#3fb950" font-family="monospace" font-size="10">  safe path ✓</text>
   <text x="400" y="65" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="19" font-weight="bold">Secure Pathname Resolution</text>
-  <text x="400" y="92" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="13">C · OS Security · File System</text>
 </svg>
