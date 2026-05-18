@@ -1,5 +1,5 @@
-AOS.init({
- 	duration: 640,
+﻿AOS.init({
+ 	duration: 380,
  	easing: 'ease',
  	once: true,
  	offset: -100
@@ -83,7 +83,7 @@ var siteIstotope = function() {
 							tl2.to(img, 1.6, { scale: '1.0', ease:Expo.easeOut }, '-=1.2');
 						} } )
 
-				}, i * 560);
+				}, i * 320);
 
 				
 
@@ -359,7 +359,7 @@ var counter = function() {
 				  }, 
 				  {
 				  	easing: 'swing',
-    				duration: 2400
+    				duration: 1400
 				  }
 				);
 			});
@@ -448,7 +448,7 @@ var portfolioItemClick = function() {
 
 		$('html, body').animate({
     	scrollTop: $('#portfolio-section').offset().top - 50
-		}, 560, 'easeInOutExpo', function() {
+		}, 320, 'easeInOutExpo', function() {
 		});
 		
 		setTimeout(function(){
@@ -465,7 +465,7 @@ var portfolioItemClick = function() {
 		setTimeout(function(){
 			$('html, body').animate({
 	    	scrollTop: $('#portfolio-section').offset().top - 50
-			}, 560, 'easeInOutExpo');
+			}, 320, 'easeInOutExpo');
 		}, 200);
 
 		TweenMax.set('.portfolio-wrapper', { visibility: 'visible', height: 'auto' });
@@ -512,7 +512,7 @@ var loadPortfolioSinglePage = function(id, href) {
 
 					TweenMax.to('.loader-portfolio-wrap', 0.8, { top: '0px', autoAlpha: 0, ease: Power4.easeOut });
 				} });
-			}, 560 );
+			}, 320 );
 		}
 	});
 
