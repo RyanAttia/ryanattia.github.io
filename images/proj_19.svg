@@ -83,10 +83,10 @@
   <rect x="530" y="155" width="130" height="85" fill="#2e7d32" opacity="0.75"/>
   <!-- Yellow arc / partial circle -->
   <path d="M 200 350 Q 240 290 280 350" fill="none" stroke="#f9a825" stroke-width="3"/>
-  <!-- Cyan curve -->
-  <polyline points="120,200 180,160 240,210 300,170 360,220 420,175 480,220" fill="none" stroke="#00838f" stroke-width="2.5"/>
-  <!-- In-progress pencil stroke (dashed) -->
-  <polyline points="560,180 585,210 610,188 635,215 660,195 685,218" fill="none" stroke="#1a237e" stroke-width="2" stroke-dasharray="5,2"/>
+  <!-- Cyan curve (moved to lower canvas area) -->
+  <polyline points="120,340 180,300 240,350 300,310 360,360 420,315 480,360" fill="none" stroke="#00838f" stroke-width="2.5"/>
+  <!-- In-progress pencil stroke (moved to lower right) -->
+  <polyline points="520,345 545,375 570,353 595,380 620,360 645,385" fill="none" stroke="#1a237e" stroke-width="2" stroke-dasharray="5,2"/>
 
   <!-- Color palette at bottom -->
   <rect x="105" y="430" width="595" height="50" fill="#21262d"/>

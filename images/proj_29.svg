@@ -18,9 +18,9 @@
   <rect x="60" y="93" width="680" height="18" fill="#21262d"/>
   <text x="400" y="98" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#c9d1d9">Ryan Attia — Resume Dashboard</text>
   <!-- Top bar icons -->
-  <circle cx="706" cy="93" r="6" fill="#f85149"/>
-  <circle cx="722" cy="93" r="6" fill="#e3b341"/>
-  <circle cx="738" cy="93" r="6" fill="#3fb950"/>
+  <circle cx="684" cy="93" r="6" fill="#f85149"/>
+  <circle cx="700" cy="93" r="6" fill="#e3b341"/>
+  <circle cx="716" cy="93" r="6" fill="#3fb950"/>
 
   <!-- Filter slicers row (just below top bar) -->
   <text x="76" y="128" font-family="monospace" font-size="9" fill="#8b949e">Filter:</text>
